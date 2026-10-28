@@ -1,0 +1,65 @@
+name: Badge Monitor
+
+on:
+  schedule:
+    # Cada 20 minutos
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
+    inputs:
+      seed:
+        description: "Seed state only (no posts)"
+        required: false
+        default: "false"
+        type: boolean
+      dry_run:
+        description: "Dry run (no posts, no state write)"
+        required: false
+        default: "false"
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install
+        run: npm ci
+
+      - name: Run monitor
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          POST_LANGUAGE: es
+          DRY_RUN: ${{ inputs.dry_run == true && 'true' || 'false' }}
+        run: |
+          if [ "${{ inputs.seed }}" = "true" ]; then
+            node src/monitor.js --seed
+          else
+            node src/monitor.js
+          fi
+
+      - name: Commit state
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/known-badges.json || true
+          if git diff --staged --quiet; then
+            echo "No state changes"
+          else
+            git commit -m "chore: update known-badges state [skip ci]"
+            git push
+          fi
