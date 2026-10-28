@@ -2,10 +2,7 @@
 /**
  * Stream Database → Badge monitor
  *
- * 1. Lee https://api.streamdatabase.com/events
- * 2. Extrae insignias (set_id + version)
- * 3. Compara con data/known-badges.json
- * 4. Publica en X las nuevas y actualiza el estado
+ * Detecta insignias nuevas y las avisa en X y/o Discord.
  *
  * Flags:
  *   --dry-run   Solo muestra, no publica ni escribe estado
@@ -18,6 +15,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { formatPost } from "./format.js";
 import { postTweet } from "./x-client.js";
+import { postDiscord } from "./discord.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -95,6 +93,29 @@ async function saveState(state) {
   await writeFile(STATE_PATH, JSON.stringify(state, null, 2) + "\n", "utf8");
 }
 
+async function notify(badge) {
+  const text = formatPost(badge, LANG);
+  let postedSomewhere = false;
+
+  // Discord (si hay webhook)
+  try {
+    const d = await postDiscord(badge, text);
+    if (d.ok) postedSomewhere = true;
+  } catch (err) {
+    console.error(`[discord] Error: ${err.message}`);
+  }
+
+  // X / Twitter (si hay credenciales)
+  try {
+    const x = await postTweet(text, badge.image);
+    if (x.ok) postedSomewhere = true;
+  } catch (err) {
+    console.error(`[x] Error: ${err.message}`);
+  }
+
+  return postedSomewhere;
+}
+
 async function main() {
   console.log(`[monitor] Inicio ${new Date().toISOString()}`);
   console.log(`[monitor] dry-run=${DRY_RUN} seed=${SEED}`);
@@ -123,33 +144,29 @@ async function main() {
     } else {
       console.log(`[monitor] (dry-run) Sembraría ${Object.keys(next).length} insignias.`);
     }
-    if (SEED || Object.keys(known).length === 0) {
-      console.log("[monitor] Listo. Las próximas ejecuciones solo publicarán las NUEVAS.");
-      return;
-    }
+    console.log("[monitor] Listo. Las próximas ejecuciones solo avisarán de las NUEVAS.");
+    return;
   }
 
   const news = badges.filter((b) => !known[badgeKey(b)]);
   console.log(`[monitor] Nuevas detectadas: ${news.length}`);
 
   for (const b of news) {
-    const text = formatPost(b, LANG);
     console.log(`[monitor] → ${b.title} (${badgeKey(b)})`);
 
     if (DRY_RUN) {
       console.log("--- DRY RUN ---");
-      console.log(text);
+      console.log(formatPost(b, LANG));
       console.log("---------------");
       continue;
     }
 
     try {
-      await postTweet(text, b.image);
-      // Pequeña pausa entre posts para no saturar rate limits
-      await new Promise((r) => setTimeout(r, 2000));
+      await notify(b);
+      // Pausa corta entre avisos
+      await new Promise((r) => setTimeout(r, 1500));
     } catch (err) {
-      console.error(`[monitor] Error publicando ${b.title}:`, err.message);
-      // No marcamos como conocida si falló el post
+      console.error(`[monitor] Error avisando ${b.title}:`, err.message);
       continue;
     }
 
@@ -161,7 +178,7 @@ async function main() {
     };
   }
 
-  // Actualizar también insignias que ya conocíamos (por si cambió título/imagen)
+  // Refrescar datos de las ya conocidas
   for (const b of badges) {
     const k = badgeKey(b);
     if (known[k]) {
