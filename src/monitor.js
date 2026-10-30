@@ -2,11 +2,13 @@
 /**
  * Stream Database → Badge monitor
  *
- * Detecta insignias nuevas y las avisa en X y/o Discord.
+ * Avisa cuando:
+ *  1. Aparece una insignia NUEVA (activa o próxima)
+ *  2. Una insignia que era "próxima" pasa a ACTIVA
  *
  * Flags:
  *   --dry-run   Solo muestra, no publica ni escribe estado
- *   --seed      Guarda el estado actual sin publicar (primera ejecución)
+ *   --seed      Guarda el estado actual sin publicar
  */
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
@@ -29,6 +31,24 @@ const LANG = process.env.POST_LANGUAGE || "es";
 
 function badgeKey(b) {
   return `${b.set_id}:${b.version}`;
+}
+
+function computeStatus(startStr, endStr) {
+  // startStr / endStr: "YYYY-MM-DD HH:MM"
+  const now = Date.now();
+  try {
+    const [sd, st] = (startStr || "").trim().split(/\s+/);
+    const [ed, et] = (endStr || "").trim().split(/\s+/);
+    if (!sd) return "unknown";
+    const start = Date.parse(`${sd}T${(st || "00:00").slice(0, 5)}:00Z`);
+    const end = ed ? Date.parse(`${ed}T${(et || "23:59").slice(0, 5)}:00Z`) : Infinity;
+    if (Number.isNaN(start)) return "unknown";
+    if (now < start) return "upcoming";
+    if (now <= end) return "active";
+    return "ended";
+  } catch {
+    return "unknown";
+  }
 }
 
 async function fetchEvents() {
@@ -57,6 +77,13 @@ function extractBadges(events) {
       const verId = version.id || "1";
       if (!setId) continue;
 
+      const start = `${event.start_at_date || ""} ${event.start_at_time || ""}`.trim();
+      const end = `${event.end_at_date || ""} ${event.end_at_time || ""}`.trim();
+      const status = computeStatus(start, end);
+
+      // No nos interesan las que ya terminaron
+      if (status === "ended") continue;
+
       out.push({
         badge_id: b._id,
         set_id: setId,
@@ -66,8 +93,9 @@ function extractBadges(events) {
         image: version.image_url_4x || version.image_url_2x || null,
         event_title: event.title,
         event_id: event._id,
-        start: `${event.start_at_date || ""} ${event.start_at_time || ""}`.trim(),
-        end: `${event.end_at_date || ""} ${event.end_at_time || ""}`.trim(),
+        start,
+        end,
+        status, // "active" | "upcoming" | "unknown"
         cost: avail.cost || null,
         scope: avail.scope || null,
         watch: !!avail.watch,
@@ -93,27 +121,20 @@ async function saveState(state) {
   await writeFile(STATE_PATH, JSON.stringify(state, null, 2) + "\n", "utf8");
 }
 
-async function notify(badge) {
-  const text = formatPost(badge, LANG);
-  let postedSomewhere = false;
+async function notify(badge, reason) {
+  const text = formatPost(badge, LANG, reason);
 
-  // Discord (si hay webhook)
   try {
-    const d = await postDiscord(badge, text);
-    if (d.ok) postedSomewhere = true;
+    await postDiscord(badge, text, reason);
   } catch (err) {
     console.error(`[discord] Error: ${err.message}`);
   }
 
-  // X / Twitter (si hay credenciales)
   try {
-    const x = await postTweet(text, badge.image);
-    if (x.ok) postedSomewhere = true;
+    await postTweet(text, badge.image);
   } catch (err) {
     console.error(`[x] Error: ${err.message}`);
   }
-
-  return postedSomewhere;
 }
 
 async function main() {
@@ -122,12 +143,12 @@ async function main() {
 
   const events = await fetchEvents();
   const badges = extractBadges(events);
-  console.log(`[monitor] Eventos: ${events.length} | Insignias: ${badges.length}`);
+  console.log(`[monitor] Eventos: ${events.length} | Insignias activas/próximas: ${badges.length}`);
 
   const state = await loadState();
   const known = state.known || {};
 
-  // Primera ejecución o --seed: solo registrar todo lo actual
+  // --seed o primera vez: registrar todo sin avisar
   if (SEED || Object.keys(known).length === 0) {
     const next = {};
     for (const b of badges) {
@@ -135,6 +156,7 @@ async function main() {
         title: b.title,
         event_title: b.event_title,
         image: b.image,
+        status: b.status,
         first_seen: new Date().toISOString(),
       };
     }
@@ -144,47 +166,76 @@ async function main() {
     } else {
       console.log(`[monitor] (dry-run) Sembraría ${Object.keys(next).length} insignias.`);
     }
-    console.log("[monitor] Listo. Las próximas ejecuciones solo avisarán de las NUEVAS.");
+    console.log("[monitor] Listo. A partir de ahora avisará nuevas y cambios a activa.");
     return;
   }
 
-  const news = badges.filter((b) => !known[badgeKey(b)]);
-  console.log(`[monitor] Nuevas detectadas: ${news.length}`);
+  // Detectar novedades y cambios de estado
+  const toNotify = []; // { badge, reason }
 
-  for (const b of news) {
-    console.log(`[monitor] → ${b.title} (${badgeKey(b)})`);
+  for (const b of badges) {
+    const k = badgeKey(b);
+    const prev = known[k];
+
+    if (!prev) {
+      // Insignia completamente nueva
+      const reason = b.status === "upcoming" ? "new_upcoming" : "new_active";
+      toNotify.push({ badge: b, reason });
+    } else if (prev.status === "upcoming" && b.status === "active") {
+      // Pasó de próxima → activa
+      toNotify.push({ badge: b, reason: "became_active" });
+    }
+  }
+
+  console.log(`[monitor] Avisos a enviar: ${toNotify.length}`);
+
+  for (const { badge, reason } of toNotify) {
+    console.log(`[monitor] → ${badge.title} (${reason})`);
 
     if (DRY_RUN) {
       console.log("--- DRY RUN ---");
-      console.log(formatPost(b, LANG));
+      console.log(formatPost(badge, LANG, reason));
       console.log("---------------");
       continue;
     }
 
     try {
-      await notify(b);
-      // Pausa corta entre avisos
+      await notify(badge, reason);
       await new Promise((r) => setTimeout(r, 1500));
     } catch (err) {
-      console.error(`[monitor] Error avisando ${b.title}:`, err.message);
+      console.error(`[monitor] Error avisando ${badge.title}:`, err.message);
       continue;
     }
 
-    known[badgeKey(b)] = {
-      title: b.title,
-      event_title: b.event_title,
-      image: b.image,
-      first_seen: new Date().toISOString(),
+    // Marcar como conocida / actualizar status
+    known[badgeKey(badge)] = {
+      title: badge.title,
+      event_title: badge.event_title,
+      image: badge.image,
+      status: badge.status,
+      first_seen: known[badgeKey(badge)]?.first_seen || new Date().toISOString(),
+      last_notified: new Date().toISOString(),
+      last_reason: reason,
     };
   }
 
-  // Refrescar datos de las ya conocidas
+  // Actualizar estado de todas las actuales (incluso sin notificar)
   for (const b of badges) {
     const k = badgeKey(b);
     if (known[k]) {
       known[k].title = b.title;
       known[k].event_title = b.event_title;
       known[k].image = b.image;
+      known[k].status = b.status;
+    } else if (!DRY_RUN) {
+      // Por si falló el notify, al menos registrarla
+      known[k] = {
+        title: b.title,
+        event_title: b.event_title,
+        image: b.image,
+        status: b.status,
+        first_seen: new Date().toISOString(),
+      };
     }
   }
 

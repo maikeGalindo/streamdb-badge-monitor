@@ -1,43 +1,65 @@
 /**
- * Plantillas de texto para los posts en X.
+ * Plantillas de texto para los posts.
  */
 
 function formatObjectives(badge) {
-  // availability puede tener objectives anidados; hacemos un resumen simple
   const cost = badge.cost;
   if (cost === "paid") return "Sub o gift sub (pago)";
   if (cost === "free" || badge.watch) return "Tiempo de visualización (gratis)";
   return "Ver detalles en Stream Database";
 }
 
-export function formatPost(badge, lang = "es") {
+/**
+ * @param {object} badge
+ * @param {"es"|"en"} lang
+ * @param {"new_active"|"new_upcoming"|"became_active"} reason
+ */
+export function formatPost(badge, lang = "es", reason = "new_active") {
   const link = "https://www.streamdatabase.com/events";
   const end = badge.end?.trim() || "?";
+  const start = badge.start?.trim() || "?";
 
   if (lang === "en") {
+    const headers = {
+      new_active: "🆕 New Twitch badge is now ACTIVE",
+      new_upcoming: "📅 New upcoming Twitch badge",
+      became_active: "🟢 Badge is now ACTIVE",
+    };
     return [
-      `🆕 New Twitch global badge available`,
+      headers[reason] || headers.new_active,
       ``,
       `📛 ${badge.title}`,
       `🎮 ${badge.event_title}`,
       ``,
+      reason === "new_upcoming"
+        ? `⏳ Starts: ${start} UTC`
+        : `⏳ Ends: ${end} UTC`,
       `📌 ${formatObjectives(badge)}`,
-      `⏳ Ends: ${end} UTC`,
       ``,
       `🔗 ${link}`,
     ].join("\n");
   }
 
-  // Español (default)
+  // Español
+  const headers = {
+    new_active: "🆕 Nueva insignia de Twitch YA ACTIVA",
+    new_upcoming: "📅 Nueva insignia PRÓXIMA",
+    became_active: "🟢 Insignia ahora ACTIVA",
+  };
+
   return [
-    `🆕 Nueva insignia de Twitch disponible`,
+    headers[reason] || headers.new_active,
     ``,
     `📛 ${badge.title}`,
     `🎮 ${badge.event_title}`,
     ``,
+    reason === "new_upcoming"
+      ? `⏳ Empieza: ${start} UTC`
+      : `⏳ Hasta: ${end} UTC`,
     `📌 Objetivo: ${formatObjectives(badge)}`,
-    `⏳ Hasta: ${end} UTC`,
     ``,
     `🔗 ${link}`,
+    ``,
+    `👉 Entra a twitch.tv/alertadropsmx y déjalo abierto`,
   ].join("\n");
 }

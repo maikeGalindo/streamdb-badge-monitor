@@ -1,9 +1,8 @@
 /**
  * Envía un mensaje a Discord usando un Webhook.
- * Solo necesitas la URL del webhook (se crea en Discord en 30 segundos).
  */
 
-export async function postDiscord(badge, text) {
+export async function postDiscord(badge, text, reason = "new_active") {
   const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
 
   if (!webhookUrl) {
@@ -11,28 +10,45 @@ export async function postDiscord(badge, text) {
     return { ok: false, skipped: true };
   }
 
+  const colors = {
+    new_active: 0x00c853,      // verde
+    new_upcoming: 0xffab00,   // naranja
+    became_active: 0x00e676,  // verde claro
+  };
+
+  const titles = {
+    new_active: `🆕 ${badge.title} · YA ACTIVA`,
+    new_upcoming: `📅 ${badge.title} · PRÓXIMA`,
+    became_active: `🟢 ${badge.title} · AHORA ACTIVA`,
+  };
+
   const embed = {
-    title: `🆕 ${badge.title}`,
+    title: titles[reason] || titles.new_active,
     description: text,
-    color: 0x9146ff, // morado Twitch
+    color: colors[reason] || colors.new_active,
     url: "https://www.streamdatabase.com/events",
     timestamp: new Date().toISOString(),
-    footer: { text: "Stream Database · AlertaDropsMX" },
+    footer: { text: "AlertaDropsMX · Stream Database" },
   };
 
   if (badge.image) {
     embed.thumbnail = { url: badge.image };
   }
 
-  if (badge.event_title) {
-    embed.fields = [
-      { name: "Evento / Juego", value: badge.event_title, inline: true },
-      { name: "Hasta", value: badge.end || "?", inline: true },
-    ];
-  }
+  embed.fields = [
+    { name: "Evento / Juego", value: badge.event_title || "—", inline: true },
+    {
+      name: reason === "new_upcoming" ? "Empieza" : "Hasta",
+      value: (reason === "new_upcoming" ? badge.start : badge.end) || "?",
+      inline: true,
+    },
+  ];
 
   const body = {
-    username: "Badge Alert",
+    username: "Badge Alert · AlertaDropsMX",
+    content: reason === "became_active" || reason === "new_active"
+      ? "🚨 **Insignia activa** → entra al stream: https://twitch.tv/alertadropsmx"
+      : undefined,
     embeds: [embed],
   };
 
