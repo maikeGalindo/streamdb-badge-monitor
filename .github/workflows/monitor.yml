@@ -2,8 +2,8 @@ name: Badge Monitor
 
 on:
   schedule:
-    # Cada 20 minutos
-    - cron: "*/20 * * * *"
+    # Cada 15 minutos
+    - cron: "*/15 * * * *"
   workflow_dispatch:
     inputs:
       seed:
