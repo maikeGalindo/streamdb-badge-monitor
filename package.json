@@ -1,7 +1,7 @@
 {
   "name": "streamdb-badge-monitor",
-  "version": "1.0.0",
-  "description": "Monitor Stream Database for new Twitch global badges and auto-post alerts to X",
+  "version": "1.1.0",
+  "description": "Monitor Stream Database for new Twitch global badges and alert on Discord",
   "type": "module",
   "main": "src/monitor.js",
   "scripts": {
@@ -15,14 +15,5 @@
   "dependencies": {
     "twitter-api-v2": "^1.17.2"
   },
-  "keywords": [
-    "twitch",
-    "badges",
-    "streamdatabase",
-    "x",
-    "twitter",
-    "monitor"
-  ],
-  "author": "maikeGalindo",
   "license": "MIT"
 }
