@@ -230,7 +230,16 @@
       "image": "https://static-cdn.jtvnw.net/badges/v1/721fe947-d819-4b13-9b7a-92debcd9393b/3",
       "status": "unknown",
       "first_seen": "2026-10-30T15:51:49.902Z"
+    },
+    "warrior-jar-alexander:1": {
+      "title": "Warrior Jar Alexander",
+      "event_title": "Elden Ring",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/a080167b-6264-404b-b9b1-e5a68348299f/3",
+      "status": "upcoming",
+      "first_seen": "2026-10-30T17:28:09.006Z",
+      "last_notified": "2026-10-30T17:28:09.006Z",
+      "last_reason": "new_upcoming"
     }
   },
-  "updatedAt": "2026-10-30T16:42:19.477Z"
+  "updatedAt": "2026-10-30T17:28:09.006Z"
 }
