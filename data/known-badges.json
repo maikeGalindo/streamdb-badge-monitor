@@ -214,8 +214,10 @@
       "title": "DbD Halloween 2026",
       "event_title": "Dead by Daylight",
       "image": "https://static-cdn.jtvnw.net/badges/v1/0f60fb82-232f-4e16-a6a8-549866f99873/3",
-      "status": "upcoming",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "status": "active",
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "last_notified": "2026-10-30T23:49:24.562Z",
+      "last_reason": "became_active"
     },
     "kda-fan:1": {
       "title": "K/DA Fan",
@@ -241,5 +243,5 @@
       "last_reason": "new_upcoming"
     }
   },
-  "updatedAt": "2026-10-30T21:42:06.212Z"
+  "updatedAt": "2026-10-30T23:49:24.562Z"
 }
