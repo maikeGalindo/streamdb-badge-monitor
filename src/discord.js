@@ -11,9 +11,9 @@ export async function postDiscord(badge, text, reason = "new_active") {
   }
 
   const colors = {
-    new_active: 0x00c853,      // verde
-    new_upcoming: 0xffab00,   // naranja
-    became_active: 0x00e676,  // verde claro
+    new_active: 0x00c853,
+    new_upcoming: 0xffab00,
+    became_active: 0x00e676,
   };
 
   const titles = {
@@ -26,9 +26,8 @@ export async function postDiscord(badge, text, reason = "new_active") {
     title: titles[reason] || titles.new_active,
     description: text,
     color: colors[reason] || colors.new_active,
-    url: "https://www.streamdatabase.com/events",
     timestamp: new Date().toISOString(),
-    footer: { text: "AlertaDropsMX · Stream Database" },
+    footer: { text: "AlertaDropsMX" },
   };
 
   if (badge.image) {
@@ -46,9 +45,10 @@ export async function postDiscord(badge, text, reason = "new_active") {
 
   const body = {
     username: "Badge Alert · AlertaDropsMX",
-    content: reason === "became_active" || reason === "new_active"
-      ? "🚨 **Insignia activa** → entra al stream: https://twitch.tv/alertadropsmx"
-      : undefined,
+    content:
+      reason === "became_active" || reason === "new_active"
+        ? "🚨 **Insignia activa** → entra al stream: https://twitch.tv/alertadropsmx"
+        : undefined,
     embeds: [embed],
   };
 

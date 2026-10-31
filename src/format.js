@@ -6,7 +6,7 @@ function formatObjectives(badge) {
   const cost = badge.cost;
   if (cost === "paid") return "Sub o gift sub (pago)";
   if (cost === "free" || badge.watch) return "Tiempo de visualización (gratis)";
-  return "Ver detalles en Stream Database";
+  return "Ver detalles en el juego / canal";
 }
 
 /**
@@ -15,7 +15,6 @@ function formatObjectives(badge) {
  * @param {"new_active"|"new_upcoming"|"became_active"} reason
  */
 export function formatPost(badge, lang = "es", reason = "new_active") {
-  const link = "https://www.streamdatabase.com/events";
   const end = badge.end?.trim() || "?";
   const start = badge.start?.trim() || "?";
 
@@ -36,7 +35,7 @@ export function formatPost(badge, lang = "es", reason = "new_active") {
         : `⏳ Ends: ${end} UTC`,
       `📌 ${formatObjectives(badge)}`,
       ``,
-      `🔗 ${link}`,
+      `👉 Open twitch.tv/alertadropsmx and leave it running`,
     ].join("\n");
   }
 
@@ -57,8 +56,6 @@ export function formatPost(badge, lang = "es", reason = "new_active") {
       ? `⏳ Empieza: ${start} UTC`
       : `⏳ Hasta: ${end} UTC`,
     `📌 Objetivo: ${formatObjectives(badge)}`,
-    ``,
-    `🔗 ${link}`,
     ``,
     `👉 Entra a twitch.tv/alertadropsmx y déjalo abierto`,
   ].join("\n");
