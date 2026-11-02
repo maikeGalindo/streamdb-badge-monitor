@@ -2,6 +2,8 @@
  * Envía un mensaje a Discord usando un Webhook.
  */
 
+import { toCdmx } from "./format.js";
+
 export async function postDiscord(badge, text, reason = "new_active") {
   const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
 
@@ -22,12 +24,15 @@ export async function postDiscord(badge, text, reason = "new_active") {
     became_active: `🟢 ${badge.title} · AHORA ACTIVA`,
   };
 
+  const timeLabel = reason === "new_upcoming" ? "Empieza" : "Hasta";
+  const timeValue = toCdmx(reason === "new_upcoming" ? badge.start : badge.end);
+
   const embed = {
     title: titles[reason] || titles.new_active,
     description: text,
     color: colors[reason] || colors.new_active,
     timestamp: new Date().toISOString(),
-    footer: { text: "AlertaDropsMX" },
+    footer: { text: "AlertaDropsMX · Hora CDMX" },
   };
 
   if (badge.image) {
@@ -36,11 +41,7 @@ export async function postDiscord(badge, text, reason = "new_active") {
 
   embed.fields = [
     { name: "Evento / Juego", value: badge.event_title || "—", inline: true },
-    {
-      name: reason === "new_upcoming" ? "Empieza" : "Hasta",
-      value: (reason === "new_upcoming" ? badge.start : badge.end) || "?",
-      inline: true,
-    },
+    { name: timeLabel, value: timeValue, inline: true },
   ];
 
   const body = {

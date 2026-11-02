@@ -1,6 +1,34 @@
 /**
  * Plantillas de texto para los posts.
+ * Horarios en hora de Ciudad de México (CDMX).
  */
+
+/** Convierte "YYYY-MM-DD HH:MM" (UTC) a texto en hora CDMX */
+export function toCdmx(utcStr) {
+  const raw = (utcStr || "").trim();
+  if (!raw) return "?";
+  try {
+    const parts = raw.split(/\s+/).filter(Boolean);
+    const date = parts[0];
+    const time = (parts[1] || "00:00").slice(0, 5);
+    const d = new Date(`${date}T${time}:00Z`);
+    if (Number.isNaN(d.getTime())) return raw;
+
+    const fmt = new Intl.DateTimeFormat("es-MX", {
+      timeZone: "America/Mexico_City",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    });
+    // es-MX suele dar dd/mm/aaaa, hh:mm
+    return `${fmt.format(d)} CDMX`;
+  } catch {
+    return raw;
+  }
+}
 
 function formatObjectives(badge) {
   const cost = badge.cost;
@@ -15,8 +43,8 @@ function formatObjectives(badge) {
  * @param {"new_active"|"new_upcoming"|"became_active"} reason
  */
 export function formatPost(badge, lang = "es", reason = "new_active") {
-  const end = badge.end?.trim() || "?";
-  const start = badge.start?.trim() || "?";
+  const end = toCdmx(badge.end);
+  const start = toCdmx(badge.start);
 
   if (lang === "en") {
     const headers = {
@@ -30,16 +58,13 @@ export function formatPost(badge, lang = "es", reason = "new_active") {
       `📛 ${badge.title}`,
       `🎮 ${badge.event_title}`,
       ``,
-      reason === "new_upcoming"
-        ? `⏳ Starts: ${start} UTC`
-        : `⏳ Ends: ${end} UTC`,
+      reason === "new_upcoming" ? `⏳ Starts: ${start}` : `⏳ Ends: ${end}`,
       `📌 ${formatObjectives(badge)}`,
       ``,
       `👉 Open twitch.tv/alertadropsmx and leave it running`,
     ].join("\n");
   }
 
-  // Español
   const headers = {
     new_active: "🆕 Nueva insignia de Twitch YA ACTIVA",
     new_upcoming: "📅 Nueva insignia PRÓXIMA",
@@ -52,9 +77,7 @@ export function formatPost(badge, lang = "es", reason = "new_active") {
     `📛 ${badge.title}`,
     `🎮 ${badge.event_title}`,
     ``,
-    reason === "new_upcoming"
-      ? `⏳ Empieza: ${start} UTC`
-      : `⏳ Hasta: ${end} UTC`,
+    reason === "new_upcoming" ? `⏳ Empieza: ${start}` : `⏳ Hasta: ${end}`,
     `📌 Objetivo: ${formatObjectives(badge)}`,
     ``,
     `👉 Entra a twitch.tv/alertadropsmx y déjalo abierto`,
