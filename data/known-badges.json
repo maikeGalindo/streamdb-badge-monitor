@@ -241,7 +241,25 @@
       "first_seen": "2026-10-30T17:28:09.006Z",
       "last_notified": "2026-11-02T09:04:49.734Z",
       "last_reason": "became_active"
+    },
+    "alliance:1": {
+      "title": "Alliance",
+      "event_title": "World of Warcraft: Forever",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/59d5bb2e-0d62-4116-a6bc-79cd5afe9246/3",
+      "status": "unknown",
+      "first_seen": "2026-11-02T19:30:28.337Z",
+      "last_notified": "2026-11-02T19:30:28.337Z",
+      "last_reason": "new_active"
+    },
+    "horde:1": {
+      "title": "Horde",
+      "event_title": "World of Warcraft: Forever",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/8dfb6f30-1ec1-497a-91e4-028a704b4f57/3",
+      "status": "unknown",
+      "first_seen": "2026-11-02T19:30:30.114Z",
+      "last_notified": "2026-11-02T19:30:30.114Z",
+      "last_reason": "new_active"
     }
   },
-  "updatedAt": "2026-11-02T09:04:49.734Z"
+  "updatedAt": "2026-11-02T19:30:30.114Z"
 }
