@@ -6,6 +6,8 @@
  *  1. Aparece una insignia NUEVA (activa o próxima)
  *  2. Una insignia que era "próxima" pasa a ACTIVA
  *
+ * Si no hay fechas en la API → se trata como PRÓXIMA (nunca como activa).
+ *
  * Flags:
  *   --dry-run   Solo muestra, no publica ni escribe estado
  *   --seed      Guarda el estado actual sin publicar
@@ -42,6 +44,7 @@ function computeStatus(startStr, endStr) {
     const st = (startParts[1] || "00:00").slice(0, 5);
     const ed = endParts[0];
     const et = (endParts[1] || "23:59").slice(0, 5);
+    // Sin fecha de inicio → no asumimos activa
     if (!sd) return "unknown";
 
     const start = Date.parse(`${sd}T${st}:00Z`);
@@ -55,10 +58,15 @@ function computeStatus(startStr, endStr) {
   }
 }
 
+/** Solo "active" cuenta como activa. unknown/upcoming = próxima. */
+function notifyReasonForNew(status) {
+  return status === "active" ? "new_active" : "new_upcoming";
+}
+
 async function fetchEvents() {
   const res = await fetch(API_URL, {
     headers: {
-      "User-Agent": "streamdb-badge-monitor/1.0 (+https://github.com/maikeGalindo/streamdb-badge-monitor)",
+      "User-Agent": "streamdb-badge-monitor/1.2 (+https://github.com/maikeGalindo/streamdb-badge-monitor)",
       Accept: "application/json",
     },
   });
@@ -126,14 +134,12 @@ async function saveState(state) {
 
 async function notify(badge, reason) {
   const text = formatPost(badge, LANG, reason);
-  let discordOk = false;
 
   if (!process.env.DISCORD_WEBHOOK_URL) {
     console.warn("[discord] ⚠️ DISCORD_WEBHOOK_URL no está configurada en los secrets.");
   } else {
     try {
-      const d = await postDiscord(badge, text, reason);
-      discordOk = !!d.ok;
+      await postDiscord(badge, text, reason);
     } catch (err) {
       console.error(`[discord] Error: ${err.message}`);
     }
@@ -144,8 +150,6 @@ async function notify(badge, reason) {
   } catch (err) {
     console.error(`[x] Error: ${err.message}`);
   }
-
-  return discordOk;
 }
 
 async function main() {
@@ -155,8 +159,7 @@ async function main() {
 
   const events = await fetchEvents();
   const badges = extractBadges(events);
-  console.log(`[monitor] Eventos: ${events.length} | Insignias activas/próximas: ${badges.length}`);
-  console.log(`[monitor] Keys actuales: ${badges.map(badgeKey).join(", ")}`);
+  console.log(`[monitor] Eventos: ${events.length} | Insignias: ${badges.length}`);
 
   const state = await loadState();
   const known = state.known || {};
@@ -179,7 +182,7 @@ async function main() {
     } else {
       console.log(`[monitor] (dry-run) Sembraría ${Object.keys(next).length} insignias.`);
     }
-    console.log("[monitor] Listo. A partir de ahora avisará nuevas y cambios a activa.");
+    console.log("[monitor] Listo.");
     return;
   }
 
@@ -190,9 +193,9 @@ async function main() {
     const prev = known[k];
 
     if (!prev) {
-      // Nueva: si es upcoming → new_upcoming; si active o unknown → new_active
-      const reason = b.status === "upcoming" ? "new_upcoming" : "new_active";
-      toNotify.push({ badge: b, reason });
+      // Solo status === "active" se anuncia como activa.
+      // unknown (sin fechas) y upcoming → PRÓXIMA
+      toNotify.push({ badge: b, reason: notifyReasonForNew(b.status) });
     } else if (
       (prev.status === "upcoming" || prev.status === "unknown") &&
       b.status === "active"
@@ -203,7 +206,7 @@ async function main() {
 
   console.log(`[monitor] Avisos a enviar: ${toNotify.length}`);
   for (const t of toNotify) {
-    console.log(`  - ${t.badge.title} (${badgeKey(t.badge)}) → ${t.reason}`);
+    console.log(`  - ${t.badge.title} (${badgeKey(t.badge)}) → ${t.reason} [api status=${t.badge.status}]`);
   }
 
   for (const { badge, reason } of toNotify) {
