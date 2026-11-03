@@ -246,7 +246,7 @@
       "title": "Alliance",
       "event_title": "World of Warcraft: Forever",
       "image": "https://static-cdn.jtvnw.net/badges/v1/59d5bb2e-0d62-4116-a6bc-79cd5afe9246/3",
-      "status": "unknown",
+      "status": "upcoming",
       "first_seen": "2026-11-02T19:30:28.337Z",
       "last_notified": "2026-11-02T19:30:28.337Z",
       "last_reason": "new_active"
@@ -255,11 +255,47 @@
       "title": "Horde",
       "event_title": "World of Warcraft: Forever",
       "image": "https://static-cdn.jtvnw.net/badges/v1/8dfb6f30-1ec1-497a-91e4-028a704b4f57/3",
-      "status": "unknown",
+      "status": "upcoming",
       "first_seen": "2026-11-02T19:30:30.114Z",
       "last_notified": "2026-11-02T19:30:30.114Z",
       "last_reason": "new_active"
+    },
+    "joy:1": {
+      "title": "Joy",
+      "event_title": "Payday 3",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/e8ff781d-a445-4ed3-9790-9514a2eb45f0/3",
+      "status": "unknown",
+      "first_seen": "2026-11-03T17:08:26.957Z",
+      "last_notified": "2026-11-03T17:08:26.957Z",
+      "last_reason": "new_upcoming"
+    },
+    "clover:1": {
+      "title": "Clover",
+      "event_title": "Payday 3",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/1495822f-a2a6-46f7-8e0b-48db278621d9/3",
+      "status": "unknown",
+      "first_seen": "2026-11-03T17:08:28.874Z",
+      "last_notified": "2026-11-03T17:08:28.874Z",
+      "last_reason": "new_upcoming"
+    },
+    "kawaiidozer:1": {
+      "title": "KawaiiDozer",
+      "event_title": "Payday 3",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/a1bf84a7-cebc-496b-acf2-411938b18d9f/3",
+      "status": "unknown",
+      "first_seen": "2026-11-03T17:08:30.536Z",
+      "last_notified": "2026-11-03T17:08:30.536Z",
+      "last_reason": "new_upcoming"
+    },
+    "pearl:1": {
+      "title": "Pearl",
+      "event_title": "Payday 3",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/8346da26-6494-4edb-945d-63a50a6e416b/3",
+      "status": "unknown",
+      "first_seen": "2026-11-03T17:08:32.201Z",
+      "last_notified": "2026-11-03T17:08:32.201Z",
+      "last_reason": "new_upcoming"
     }
   },
-  "updatedAt": "2026-11-03T09:12:50.954Z"
+  "updatedAt": "2026-11-03T17:08:32.202Z"
 }
