@@ -20,6 +20,7 @@ import { fileURLToPath } from "node:url";
 import { formatPost } from "./format.js";
 import { postTweet } from "./x-client.js";
 import { postDiscord } from "./discord.js";
+import { syncBadgesToSheet } from "./google-sheets.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -93,8 +94,6 @@ function extractBadges(events) {
       const end = `${event.end_at_date || ""} ${event.end_at_time || ""}`.trim();
       const status = computeStatus(start, end);
 
-      if (status === "ended") continue;
-
       out.push({
         badge_id: b._id,
         set_id: setId,
@@ -161,6 +160,12 @@ async function main() {
   const badges = extractBadges(events);
   console.log(`[monitor] Eventos: ${events.length} | Insignias: ${badges.length}`);
 
+  try {
+    await syncBadgesToSheet(badges, { dryRun: DRY_RUN });
+  } catch (error) {
+    console.error(`[sheets] Error sincronizando: ${error.message}`);
+  }
+
   const state = await loadState();
   const known = state.known || {};
   console.log(`[monitor] Known en estado: ${Object.keys(known).length}`);
@@ -192,7 +197,7 @@ async function main() {
     const k = badgeKey(b);
     const prev = known[k];
 
-    if (!prev) {
+    if (!prev && b.status !== "ended") {
       // Solo status === "active" se anuncia como activa.
       // unknown (sin fechas) y upcoming → PRÓXIMA
       toNotify.push({ badge: b, reason: notifyReasonForNew(b.status) });
