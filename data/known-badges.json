@@ -264,38 +264,38 @@
       "title": "Joy",
       "event_title": "PAYDAY 3",
       "image": "https://static-cdn.jtvnw.net/badges/v1/e8ff781d-a445-4ed3-9790-9514a2eb45f0/3",
-      "status": "upcoming",
+      "status": "active",
       "first_seen": "2026-11-03T17:08:26.957Z",
-      "last_notified": "2026-11-03T17:08:26.957Z",
-      "last_reason": "new_upcoming"
+      "last_notified": "2026-11-06T12:13:15.860Z",
+      "last_reason": "became_active"
     },
     "clover:1": {
       "title": "Clover",
       "event_title": "PAYDAY 3",
       "image": "https://static-cdn.jtvnw.net/badges/v1/1495822f-a2a6-46f7-8e0b-48db278621d9/3",
-      "status": "upcoming",
+      "status": "active",
       "first_seen": "2026-11-03T17:08:28.874Z",
-      "last_notified": "2026-11-03T17:08:28.874Z",
-      "last_reason": "new_upcoming"
+      "last_notified": "2026-11-06T12:13:17.683Z",
+      "last_reason": "became_active"
     },
     "kawaiidozer:1": {
       "title": "KawaiiDozer",
       "event_title": "PAYDAY 3",
       "image": "https://static-cdn.jtvnw.net/badges/v1/a1bf84a7-cebc-496b-acf2-411938b18d9f/3",
-      "status": "upcoming",
+      "status": "active",
       "first_seen": "2026-11-03T17:08:30.536Z",
-      "last_notified": "2026-11-03T17:08:30.536Z",
-      "last_reason": "new_upcoming"
+      "last_notified": "2026-11-06T12:13:19.416Z",
+      "last_reason": "became_active"
     },
     "pearl:1": {
       "title": "Pearl",
       "event_title": "PAYDAY 3",
       "image": "https://static-cdn.jtvnw.net/badges/v1/8346da26-6494-4edb-945d-63a50a6e416b/3",
-      "status": "upcoming",
+      "status": "active",
       "first_seen": "2026-11-03T17:08:32.201Z",
-      "last_notified": "2026-11-03T17:08:32.201Z",
-      "last_reason": "new_upcoming"
+      "last_notified": "2026-11-06T12:13:21.164Z",
+      "last_reason": "became_active"
     }
   },
-  "updatedAt": "2026-11-06T07:12:54.807Z"
+  "updatedAt": "2026-11-06T12:13:21.164Z"
 }
