@@ -295,7 +295,25 @@
       "first_seen": "2026-11-03T17:08:32.201Z",
       "last_notified": "2026-11-06T12:13:21.164Z",
       "last_reason": "became_active"
+    },
+    "gallica:1": {
+      "title": "Gallica",
+      "event_title": "Metaphor: ReFantazio",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/d2adf631-2045-4246-9c34-201487e809ae/3",
+      "status": "unknown",
+      "first_seen": "2026-11-06T20:46:24.620Z",
+      "last_notified": "2026-11-06T20:46:24.620Z",
+      "last_reason": "new_upcoming"
+    },
+    "doom-the-dark-ages:1": {
+      "title": "DOOM: The Dark Ages",
+      "event_title": "DOOM: The Dark Ages",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/80e404b7-673b-4ca8-ab69-1779f9685eec/3",
+      "status": "unknown",
+      "first_seen": "2026-11-06T20:46:26.471Z",
+      "last_notified": "2026-11-06T20:46:26.471Z",
+      "last_reason": "new_upcoming"
     }
   },
-  "updatedAt": "2026-11-06T19:25:14.960Z"
+  "updatedAt": "2026-11-06T20:46:26.471Z"
 }
