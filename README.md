@@ -52,7 +52,21 @@ Discord usa algo que se llama **Webhook**. Es como un buzón secreto donde el pr
 
 ---
 
-### 3. (Opcional) Conectar X / Twitter
+### 3. Conectar Google Sheets
+
+El monitor puede actualizar la hoja automáticamente en cada ejecución, sin quitar los avisos de Discord.
+
+1. En tu Google Sheet abre **Extensiones → Apps Script**.
+2. Copia el archivo `integrations/google-sheets-apps-script.js` de este repositorio.
+3. En **Configuración del proyecto → Propiedades de secuencia de comandos**, agrega `SHEETS_WEBHOOK_SECRET` con un valor largo y privado.
+4. Despliega como **Aplicación web**, ejecutando como tú y con acceso **Cualquiera**.
+5. Agrega estos secrets en GitHub Actions:
+   - `GOOGLE_SHEETS_WEBHOOK_URL`: la URL `/exec` del despliegue.
+   - `GOOGLE_SHEETS_WEBHOOK_SECRET`: el mismo valor configurado en Apps Script.
+
+La sincronización conserva las columnas actuales (`badge_name`, `badge_image`, `slug`, `status`, `type`, `startsAt`, `endsAt`, `claimMethod`, `category`, `isNew`, `notes`) y agrega identificadores técnicos para evitar duplicados. Las insignias caducadas se actualizan como `inactive` y no generan avisos nuevos en Discord.
+
+### 4. (Opcional) Conectar X / Twitter
 
 Solo si también quieres que publique en X. Es un poco más largo porque X pide una cuenta de desarrollador.
 
