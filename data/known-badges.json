@@ -228,9 +228,9 @@
     },
     "pentakill-fan:1": {
       "title": "Pentakill Fan",
-      "event_title": "LoL Virtual Groups",
+      "event_title": "Pentakill Fan",
       "image": "https://static-cdn.jtvnw.net/badges/v1/721fe947-d819-4b13-9b7a-92debcd9393b/3",
-      "status": "unknown",
+      "status": "upcoming",
       "first_seen": "2026-10-30T15:51:49.902Z"
     },
     "warrior-jar-alexander:1": {
@@ -297,5 +297,5 @@
       "last_reason": "became_active"
     }
   },
-  "updatedAt": "2026-11-06T15:09:29.573Z"
+  "updatedAt": "2026-11-06T19:22:56.319Z"
 }
