@@ -230,8 +230,10 @@
       "title": "Pentakill Fan",
       "event_title": "Pentakill Fan",
       "image": "https://static-cdn.jtvnw.net/badges/v1/721fe947-d819-4b13-9b7a-92debcd9393b/3",
-      "status": "upcoming",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "status": "active",
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "last_notified": "2026-11-07T16:09:08.837Z",
+      "last_reason": "became_active"
     },
     "warrior-jar-alexander:1": {
       "title": "Warrior Jar Alexander",
@@ -315,5 +317,5 @@
       "last_reason": "new_upcoming"
     }
   },
-  "updatedAt": "2026-11-07T13:35:24.652Z"
+  "updatedAt": "2026-11-07T16:09:08.837Z"
 }
