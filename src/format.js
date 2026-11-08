@@ -40,7 +40,7 @@ function formatObjectives(badge) {
 /**
  * @param {object} badge
  * @param {"es"|"en"} lang
- * @param {"new_active"|"new_upcoming"|"became_active"} reason
+ * @param {"new_active"|"new_upcoming"|"became_active"|"updated"} reason
  */
 export function formatPost(badge, lang = "es", reason = "new_active") {
   const end = toCdmx(badge.end);
@@ -51,6 +51,7 @@ export function formatPost(badge, lang = "es", reason = "new_active") {
       new_active: "🆕 New Twitch badge is now ACTIVE",
       new_upcoming: "📅 New upcoming Twitch badge",
       became_active: "🟢 Badge is now ACTIVE",
+      updated: "🔄 Twitch badge updated",
     };
     return [
       headers[reason] || headers.new_active,
@@ -58,7 +59,7 @@ export function formatPost(badge, lang = "es", reason = "new_active") {
       `📛 ${badge.title}`,
       `🎮 ${badge.event_title}`,
       ``,
-      reason === "new_upcoming" ? `⏳ Starts: ${start}` : `⏳ Ends: ${end}`,
+      reason === "new_upcoming" || (reason === "updated" && badge.status === "upcoming") ? `⏳ Starts: ${start}` : `⏳ Ends: ${end}`,
       `📌 ${formatObjectives(badge)}`,
       ``,
       `👉 Open twitch.tv/alertadropsmx and leave it running`,
@@ -69,6 +70,7 @@ export function formatPost(badge, lang = "es", reason = "new_active") {
     new_active: "🆕 Nueva insignia de Twitch YA ACTIVA",
     new_upcoming: "📅 Nueva insignia PRÓXIMA",
     became_active: "🟢 Insignia ahora ACTIVA",
+    updated: "🔄 Insignia de Twitch actualizada",
   };
 
   return [
@@ -77,7 +79,7 @@ export function formatPost(badge, lang = "es", reason = "new_active") {
     `📛 ${badge.title}`,
     `🎮 ${badge.event_title}`,
     ``,
-    reason === "new_upcoming" ? `⏳ Empieza: ${start}` : `⏳ Hasta: ${end}`,
+    reason === "new_upcoming" || (reason === "updated" && badge.status === "upcoming") ? `⏳ Empieza: ${start}` : `⏳ Hasta: ${end}`,
     `📌 Objetivo: ${formatObjectives(badge)}`,
     ``,
     `👉 Entra a twitch.tv/alertadropsmx y déjalo abierto`,
