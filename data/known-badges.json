@@ -81,134 +81,153 @@
       "title": "True Damage Fan",
       "event_title": "LoL Virtual Group: True Damage",
       "image": "https://static-cdn.jtvnw.net/badges/v1/06c27674-9c56-479d-8acf-a3dfd5680425/3",
-      "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "status": "ended",
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"True Damage Fan\",\"description\":\"This Chat Badge was earned by supporting the 2026 League of Legends World Championship!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/06c27674-9c56-479d-8acf-a3dfd5680425/3\",\"event_title\":\"LoL Virtual Group: True Damage\",\"event_id\":\"6adf799c30cc513707b257ff\",\"start\":\"2026-10-27 16:00\",\"end\":\"2026-11-07 15:59\",\"status\":\"ended\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "hunt-red:1": {
       "title": "Hunt Red",
       "event_title": " Hunt: Showdown 1896",
       "image": "https://static-cdn.jtvnw.net/badges/v1/3433db97-62af-4475-a76d-2cc97f3af012/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"Hunt Red\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer in the Hunt: Showdown 1896 category\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/3433db97-62af-4475-a76d-2cc97f3af012/3\",\"event_title\":\" Hunt: Showdown 1896\",\"event_id\":\"6ac2f04e8244b82fd51ca4e1\",\"start\":\"2026-10-26 14:54\",\"end\":\"2026-11-09 13:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     },
     "hunt-white:1": {
       "title": "Hunt White",
       "event_title": " Hunt: Showdown 1896",
       "image": "https://static-cdn.jtvnw.net/badges/v1/20dd1791-9c66-44a8-b077-fa97d0c8b88b/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"Hunt White\",\"description\":\"This badge was earned by watching a streamer in the Hunt: Showdown 1896 category\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/20dd1791-9c66-44a8-b077-fa97d0c8b88b/3\",\"event_title\":\" Hunt: Showdown 1896\",\"event_id\":\"6ac2f04e8244b82fd51ca4e1\",\"start\":\"2026-10-26 14:54\",\"end\":\"2026-11-09 13:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "modern-warfare-4:1": {
       "title": "Modern Warfare 4",
       "event_title": "Call of Duty: Modern Warfare 4",
       "image": "https://static-cdn.jtvnw.net/badges/v1/41505da3-121e-4d81-985f-95185a79186c/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"Modern Warfare 4\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer in the Call of Duty Modern Warfare 4 category during the launch.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/41505da3-121e-4d81-985f-95185a79186c/3\",\"event_title\":\"Call of Duty: Modern Warfare 4\",\"event_id\":\"6aca93574bcefbb4e80f0cc2\",\"start\":\"2026-10-23 17:00\",\"end\":\"2026-11-13 17:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     },
     "twitchcon-2026---san-diego---beachball:1": {
       "title": "TwitchCon 2026 - San Diego - BeachBall",
       "event_title": "TwitchCon 2026 San Diego",
       "image": "https://static-cdn.jtvnw.net/badges/v1/b3f69c97-a9a7-4360-bb9e-485ec8db72bb/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"TwitchCon 2026 - San Diego - BeachBall\",\"description\":\"This badge is given to anyone who purchased a 1-day ticket to TwitchCon San Diego 2026.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/b3f69c97-a9a7-4360-bb9e-485ec8db72bb/3\",\"event_title\":\"TwitchCon 2026 San Diego\",\"event_id\":\"693a4c9de052cfe292d9ad12\",\"start\":\"2026-07-22 17:00\",\"end\":\"2026-11-15\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":false}"
     },
     "twitchcon-2026---san-diego---taco:1": {
       "title": "TwitchCon 2026 - San Diego - Taco",
       "event_title": "TwitchCon 2026 San Diego",
       "image": "https://static-cdn.jtvnw.net/badges/v1/aea5244a-3fb5-48f9-a17c-a377760df226/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"TwitchCon 2026 - San Diego - Taco\",\"description\":\"This badge is given to anyone who purchased a 3-day ticket to TwitchCon San Diego 2026.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/aea5244a-3fb5-48f9-a17c-a377760df226/3\",\"event_title\":\"TwitchCon 2026 San Diego\",\"event_id\":\"693a4c9de052cfe292d9ad12\",\"start\":\"2026-07-22 17:00\",\"end\":\"2026-11-15\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":false}"
     },
     "worlds-2026-supporter:1": {
       "title": "Worlds 2026 Supporter",
       "event_title": "LoL 2026 World Championship",
       "image": "https://static-cdn.jtvnw.net/badges/v1/031a4882-d8e6-4dd6-97d8-40620f59d288/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"Worlds 2026 Supporter\",\"description\":\"This Chat Badge was earned by supporting the 2026 League of Legends World Championship!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/031a4882-d8e6-4dd6-97d8-40620f59d288/3\",\"event_title\":\"LoL 2026 World Championship\",\"event_id\":\"6acfe5dd24578c99e09431d6\",\"start\":\"2026-10-14 19:00\",\"end\":\"2026-11-15 18:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     },
     "qsmp2:1": {
       "title": "QSMP2",
       "event_title": "QSMP 2 Season 2",
       "image": "https://static-cdn.jtvnw.net/badges/v1/2fa68fb9-fcdd-4795-bfab-f408e10efaef/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"QSMP2\",\"description\":\"This badge was earned for watching QSMP during the initial 2026 launch!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/2fa68fb9-fcdd-4795-bfab-f408e10efaef/3\",\"event_title\":\"QSMP 2 Season 2\",\"event_id\":\"6ad9288e7347b9706362c82f\",\"start\":\"2026-10-21 13:00\",\"end\":\"2026-11-18 12:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "the-mox:1": {
       "title": "The Mox",
       "event_title": "Cyberpunk 2077",
       "image": "https://static-cdn.jtvnw.net/badges/v1/1b9b6fbf-9100-4b2c-9bdf-8be0f1456ff9/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"The Mox\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer in the Cyberpunk 2077 category\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/1b9b6fbf-9100-4b2c-9bdf-8be0f1456ff9/3\",\"event_title\":\"Cyberpunk 2077\",\"event_id\":\"6ad7e39cfe56711c02bb1e6c\",\"start\":\"2026-10-22 10:00\",\"end\":\"2026-11-19 09:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     },
     "gastly:1": {
       "title": "Gastly",
       "event_title": "Pokemon Night Out 2026",
       "image": "https://static-cdn.jtvnw.net/badges/v1/602335f3-4d73-40f9-b8e2-5c5e25f32d62/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"Gastly\",\"description\":\"This badge was earned during Pokémon Night Out 2026.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/602335f3-4d73-40f9-b8e2-5c5e25f32d62/3\",\"event_title\":\"Pokemon Night Out 2026\",\"event_id\":\"6ac42d449ade7b3bd4b193b6\",\"start\":\"2026-10-16 17:00\",\"end\":\"2027-01-30 22:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":true,\"subscription\":true}"
     },
     "haunter:1": {
       "title": "Haunter",
       "event_title": "Pokemon Night Out 2026",
       "image": "https://static-cdn.jtvnw.net/badges/v1/ddfbf317-aa77-482e-a99d-eb975deb2fe7/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"Haunter\",\"description\":\"This badge was earned by evolving the Night Out 2026 Gastly badge.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/ddfbf317-aa77-482e-a99d-eb975deb2fe7/3\",\"event_title\":\"Pokemon Night Out 2026\",\"event_id\":\"6ac42d449ade7b3bd4b193b6\",\"start\":\"2026-10-16 17:00\",\"end\":\"2027-01-30 22:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "gengar:1": {
       "title": "Gengar",
       "event_title": "Pokemon Night Out 2026",
       "image": "https://static-cdn.jtvnw.net/badges/v1/21c5d89c-bea4-4682-8080-96b22770d0f4/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"Gengar\",\"description\":\"This badge was earned by evolving the Night Out 2026 Haunter badge.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/21c5d89c-bea4-4682-8080-96b22770d0f4/3\",\"event_title\":\"Pokemon Night Out 2026\",\"event_id\":\"6ac42d449ade7b3bd4b193b6\",\"start\":\"2026-10-16 17:00\",\"end\":\"2027-01-30 22:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "pikachu:1": {
       "title": "Pikachu",
       "event_title": "Evolution for Pichu",
       "image": "https://static-cdn.jtvnw.net/badges/v1/b9dd6905-474f-45d1-a4ff-8ba138208afc/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"Pikachu\",\"description\":\"This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/b9dd6905-474f-45d1-a4ff-8ba138208afc/3\",\"event_title\":\"Evolution for Pichu\",\"event_id\":\"6ac4d6cc387ee297656fd72f\",\"start\":\"2026-10-16 17:00\",\"end\":\"2027-01-30 22:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "charmeleon:1": {
       "title": "Charmeleon",
       "event_title": "Evolution for Charmander",
       "image": "https://static-cdn.jtvnw.net/badges/v1/d9698627-aff7-434c-8002-1351b2c59984/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"Charmeleon\",\"description\":\"This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/d9698627-aff7-434c-8002-1351b2c59984/3\",\"event_title\":\"Evolution for Charmander\",\"event_id\":\"6ac4d796387ee297656ff608\",\"start\":\"2026-10-16 17:00\",\"end\":\"2027-01-30 22:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "charizard:1": {
       "title": "Charizard",
       "event_title": "Evolution for Charmander",
       "image": "https://static-cdn.jtvnw.net/badges/v1/ac097350-add0-44c4-b405-e70aa746389b/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"Charizard\",\"description\":\"This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/ac097350-add0-44c4-b405-e70aa746389b/3\",\"event_title\":\"Evolution for Charmander\",\"event_id\":\"6ac4d796387ee297656ff608\",\"start\":\"2026-10-16 17:00\",\"end\":\"2027-01-30 22:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "ivysaur:1": {
       "title": "Ivysaur",
       "event_title": "Evolution for Bulbasaur",
       "image": "https://static-cdn.jtvnw.net/badges/v1/6de326e8-643f-4043-beb6-3ad135385708/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"Ivysaur\",\"description\":\"This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/6de326e8-643f-4043-beb6-3ad135385708/3\",\"event_title\":\"Evolution for Bulbasaur\",\"event_id\":\"6ac4d9bb387ee297657046d9\",\"start\":\"2026-10-16 17:00\",\"end\":\"2027-01-30 22:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "venusaur:1": {
       "title": "Venusaur",
       "event_title": "Evolution for Bulbasaur",
       "image": "https://static-cdn.jtvnw.net/badges/v1/ad14f7e4-1ca6-476b-acaf-250da22388ec/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"Venusaur\",\"description\":\"This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/ad14f7e4-1ca6-476b-acaf-250da22388ec/3\",\"event_title\":\"Evolution for Bulbasaur\",\"event_id\":\"6ac4d9bb387ee297657046d9\",\"start\":\"2026-10-16 17:00\",\"end\":\"2027-01-30 22:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "wartortle:1": {
       "title": "Wartortle",
       "event_title": "Evolution for Squirtle",
       "image": "https://static-cdn.jtvnw.net/badges/v1/15a0db5d-bef1-49bb-8594-e3925e1ec248/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"Wartortle\",\"description\":\"This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/15a0db5d-bef1-49bb-8594-e3925e1ec248/3\",\"event_title\":\"Evolution for Squirtle\",\"event_id\":\"6ac4da12387ee2976570555e\",\"start\":\"2026-10-16 17:00\",\"end\":\"2027-01-30 22:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "blastoise:1": {
       "title": "Blastoise",
       "event_title": "Evolution for Squirtle",
       "image": "https://static-cdn.jtvnw.net/badges/v1/2b975e12-fd49-4e54-85c4-6cc042453dbb/3",
       "status": "active",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"Blastoise\",\"description\":\"This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/2b975e12-fd49-4e54-85c4-6cc042453dbb/3\",\"event_title\":\"Evolution for Squirtle\",\"event_id\":\"6ac4da12387ee2976570555e\",\"start\":\"2026-10-16 17:00\",\"end\":\"2027-01-30 22:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "dbd-halloween-2026:1": {
       "title": "DbD Halloween 2026",
@@ -217,14 +236,16 @@
       "status": "active",
       "first_seen": "2026-10-30T15:51:49.902Z",
       "last_notified": "2026-10-30T23:49:24.562Z",
-      "last_reason": "became_active"
+      "last_reason": "became_active",
+      "fingerprint": "{\"title\":\"DbD Halloween 2026\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer during Twitch Rivals of Terror and Stream-o-Ween 2026!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/0f60fb82-232f-4e16-a6a8-549866f99873/3\",\"event_title\":\"Dead by Daylight\",\"event_id\":\"6ae0f4837199dfa244121823\",\"start\":\"2026-10-30 21:00\",\"end\":\"2026-11-09 07:58\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     },
     "kda-fan:1": {
       "title": "K/DA Fan",
       "event_title": "LoL Virtual Groups",
       "image": "https://static-cdn.jtvnw.net/badges/v1/cf6ff3ab-9153-483b-bdac-f07577e6e202/3",
       "status": "unknown",
-      "first_seen": "2026-10-30T15:51:49.902Z"
+      "first_seen": "2026-10-30T15:51:49.902Z",
+      "fingerprint": "{\"title\":\"K/DA Fan\",\"description\":\"This Chat Badge was earned by supporting the 2026 League of Legends World Championship!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/cf6ff3ab-9153-483b-bdac-f07577e6e202/3\",\"event_title\":\"LoL Virtual Groups\",\"event_id\":\"6aceb7be9d7941cd2d6e4c4d\",\"start\":\"\",\"end\":\"\",\"status\":\"unknown\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "pentakill-fan:1": {
       "title": "Pentakill Fan",
@@ -233,7 +254,8 @@
       "status": "active",
       "first_seen": "2026-10-30T15:51:49.902Z",
       "last_notified": "2026-11-07T16:09:08.837Z",
-      "last_reason": "became_active"
+      "last_reason": "became_active",
+      "fingerprint": "{\"title\":\"Pentakill Fan\",\"description\":\"This Chat Badge was earned by supporting the 2026 League of Legends World Championship!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/721fe947-d819-4b13-9b7a-92debcd9393b/3\",\"event_title\":\"Pentakill Fan\",\"event_id\":\"6aedfa92377da3174baed403\",\"start\":\"2026-11-07 16:00\",\"end\":\"2026-11-13 15:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "warrior-jar-alexander:1": {
       "title": "Warrior Jar Alexander",
@@ -242,7 +264,8 @@
       "status": "active",
       "first_seen": "2026-10-30T17:28:09.006Z",
       "last_notified": "2026-11-02T09:04:49.734Z",
-      "last_reason": "became_active"
+      "last_reason": "became_active",
+      "fingerprint": "{\"title\":\"Warrior Jar Alexander\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer in the ELDEN RING category.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/a080167b-6264-404b-b9b1-e5a68348299f/3\",\"event_title\":\"Elden Ring\",\"event_id\":\"6a95e07a2e2646f3b5fd0487\",\"start\":\"2026-11-02 07:00\",\"end\":\"2026-11-30 06:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     },
     "alliance:1": {
       "title": "Alliance",
@@ -251,7 +274,8 @@
       "status": "active",
       "first_seen": "2026-11-02T19:30:28.337Z",
       "last_notified": "2026-11-04T16:31:36.119Z",
-      "last_reason": "became_active"
+      "last_reason": "became_active",
+      "fingerprint": "{\"title\":\"Alliance\",\"description\":\"FOR THE ALLIANCE! This badge was unlocked by subscribing or gifting a sub to a streamer during the launch of WoW: Forever.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/59d5bb2e-0d62-4116-a6bc-79cd5afe9246/3\",\"event_title\":\"World of Warcraft: Forever\",\"event_id\":\"6ae8d5226a392ebb03a97311\",\"start\":\"2026-11-04 16:00\",\"end\":\"2026-12-01 07:58\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     },
     "horde:1": {
       "title": "Horde",
@@ -260,7 +284,8 @@
       "status": "active",
       "first_seen": "2026-11-02T19:30:30.114Z",
       "last_notified": "2026-11-04T16:31:40.552Z",
-      "last_reason": "became_active"
+      "last_reason": "became_active",
+      "fingerprint": "{\"title\":\"Horde\",\"description\":\"FOR THE HORDE! This badge was unlocked by subscribing or gifting a sub to a streamer during the launch of WoW: Forever.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/8dfb6f30-1ec1-497a-91e4-028a704b4f57/3\",\"event_title\":\"World of Warcraft: Forever\",\"event_id\":\"6ae8d5226a392ebb03a97311\",\"start\":\"2026-11-04 16:00\",\"end\":\"2026-12-01 07:58\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     },
     "joy:1": {
       "title": "Joy",
@@ -269,7 +294,8 @@
       "status": "active",
       "first_seen": "2026-11-03T17:08:26.957Z",
       "last_notified": "2026-11-06T12:13:15.860Z",
-      "last_reason": "became_active"
+      "last_reason": "became_active",
+      "fingerprint": "{\"title\":\"Joy\",\"description\":\"This badge was earned by watching a streamer in the Payday 3 category for 90 minutes\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/e8ff781d-a445-4ed3-9790-9514a2eb45f0/3\",\"event_title\":\"PAYDAY 3\",\"event_id\":\"6ae9f05481dcdc9db596a160\",\"start\":\"2026-11-06 12:00\",\"end\":\"2026-11-27 11:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "clover:1": {
       "title": "Clover",
@@ -278,7 +304,8 @@
       "status": "active",
       "first_seen": "2026-11-03T17:08:28.874Z",
       "last_notified": "2026-11-06T12:13:17.683Z",
-      "last_reason": "became_active"
+      "last_reason": "became_active",
+      "fingerprint": "{\"title\":\"Clover\",\"description\":\"This badge was earned by watching a streamer in the Payday 3 category for 30 minutes\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/1495822f-a2a6-46f7-8e0b-48db278621d9/3\",\"event_title\":\"PAYDAY 3\",\"event_id\":\"6ae9f05481dcdc9db596a160\",\"start\":\"2026-11-06 12:00\",\"end\":\"2026-11-27 11:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "kawaiidozer:1": {
       "title": "KawaiiDozer",
@@ -287,7 +314,8 @@
       "status": "active",
       "first_seen": "2026-11-03T17:08:30.536Z",
       "last_notified": "2026-11-06T12:13:19.416Z",
-      "last_reason": "became_active"
+      "last_reason": "became_active",
+      "fingerprint": "{\"title\":\"KawaiiDozer\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer in the Payday 3 category\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/a1bf84a7-cebc-496b-acf2-411938b18d9f/3\",\"event_title\":\"PAYDAY 3\",\"event_id\":\"6ae9f05481dcdc9db596a160\",\"start\":\"2026-11-06 12:00\",\"end\":\"2026-11-27 11:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     },
     "pearl:1": {
       "title": "Pearl",
@@ -296,7 +324,8 @@
       "status": "active",
       "first_seen": "2026-11-03T17:08:32.201Z",
       "last_notified": "2026-11-06T12:13:21.164Z",
-      "last_reason": "became_active"
+      "last_reason": "became_active",
+      "fingerprint": "{\"title\":\"Pearl\",\"description\":\"This badge was earned by watching a streamer in the Payday 3 category for 60 minutes\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/8346da26-6494-4edb-945d-63a50a6e416b/3\",\"event_title\":\"PAYDAY 3\",\"event_id\":\"6ae9f05481dcdc9db596a160\",\"start\":\"2026-11-06 12:00\",\"end\":\"2026-11-27 11:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "gallica:1": {
       "title": "Gallica",
@@ -305,7 +334,8 @@
       "status": "unknown",
       "first_seen": "2026-11-06T20:46:24.620Z",
       "last_notified": "2026-11-06T20:46:24.620Z",
-      "last_reason": "new_upcoming"
+      "last_reason": "new_upcoming",
+      "fingerprint": "{\"title\":\"Gallica\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer in the Metaphor: ReFantazio category during the Switch 2 launch!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/d2adf631-2045-4246-9c34-201487e809ae/3\",\"event_title\":\"Metaphor: ReFantazio\",\"event_id\":\"6aee2b1c377da3174bb814ee\",\"start\":\"\",\"end\":\"\",\"status\":\"unknown\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     },
     "doom-the-dark-ages:1": {
       "title": "DOOM: The Dark Ages",
@@ -314,8 +344,9 @@
       "status": "unknown",
       "first_seen": "2026-11-06T20:46:26.471Z",
       "last_notified": "2026-11-06T20:46:26.471Z",
-      "last_reason": "new_upcoming"
+      "last_reason": "new_upcoming",
+      "fingerprint": "{\"title\":\"DOOM: The Dark Ages\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer in the DOOM: The Dark Ages category during the launch of Slaughter Mode!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/80e404b7-673b-4ca8-ab69-1779f9685eec/3\",\"event_title\":\"DOOM: The Dark Ages\",\"event_id\":\"6aee2b27377da3174bb816ef\",\"start\":\"\",\"end\":\"\",\"status\":\"unknown\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     }
   },
-  "updatedAt": "2026-11-08T07:54:47.756Z"
+  "updatedAt": "2026-11-08T12:22:18.160Z"
 }
