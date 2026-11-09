@@ -233,11 +233,11 @@
       "title": "DbD Halloween 2026",
       "event_title": "Dead by Daylight",
       "image": "https://static-cdn.jtvnw.net/badges/v1/0f60fb82-232f-4e16-a6a8-549866f99873/3",
-      "status": "active",
+      "status": "ended",
       "first_seen": "2026-10-30T15:51:49.902Z",
       "last_notified": "2026-10-30T23:49:24.562Z",
       "last_reason": "became_active",
-      "fingerprint": "{\"title\":\"DbD Halloween 2026\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer during Twitch Rivals of Terror and Stream-o-Ween 2026!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/0f60fb82-232f-4e16-a6a8-549866f99873/3\",\"event_title\":\"Dead by Daylight\",\"event_id\":\"6ae0f4837199dfa244121823\",\"start\":\"2026-10-30 21:00\",\"end\":\"2026-11-09 07:58\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
+      "fingerprint": "{\"title\":\"DbD Halloween 2026\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer during Twitch Rivals of Terror and Stream-o-Ween 2026!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/0f60fb82-232f-4e16-a6a8-549866f99873/3\",\"event_title\":\"Dead by Daylight\",\"event_id\":\"6ae0f4837199dfa244121823\",\"start\":\"2026-10-30 21:00\",\"end\":\"2026-11-09 07:58\",\"status\":\"ended\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     },
     "kda-fan:1": {
       "title": "K/DA Fan",
@@ -348,5 +348,5 @@
       "fingerprint": "{\"title\":\"DOOM: The Dark Ages\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer in the DOOM: The Dark Ages category during the launch of Slaughter Mode!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/80e404b7-673b-4ca8-ab69-1779f9685eec/3\",\"event_title\":\"DOOM: The Dark Ages\",\"event_id\":\"6aee2b27377da3174bb816ef\",\"start\":\"\",\"end\":\"\",\"status\":\"unknown\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     }
   },
-  "updatedAt": "2026-11-09T02:41:42.112Z"
+  "updatedAt": "2026-11-09T10:24:49.481Z"
 }
