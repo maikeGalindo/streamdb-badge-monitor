@@ -9,6 +9,8 @@ const HEADERS = [
   "claimMethod", "category", "isNew", "notes", "set_id", "version", "event_id", "updatedAt",
 ];
 
+const SHEET_NAME = "tracker";
+
 function doPost(e) {
   try {
     const expected = PropertiesService.getScriptProperties().getProperty("SHEETS_WEBHOOK_SECRET");
@@ -19,7 +21,12 @@ function doPost(e) {
       return json({ ok: false, error: "Invalid payload" });
     }
 
-    const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheets()[0];
+    const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = spreadsheet.getSheetByName(SHEET_NAME);
+    if (!sheet) {
+      return json({ ok: false, error: `Hoja '${SHEET_NAME}' no encontrada` });
+    }
+
     ensureHeaders(sheet);
     const values = sheet.getDataRange().getValues();
     const header = values[0].map(String);
