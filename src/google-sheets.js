@@ -22,10 +22,10 @@ function claimMethodEs(badge) {
 
 function isNewBadge(badge) {
   const status = badge.status === "ended" ? "inactive" : (badge.status || "upcoming");
-  if (status !== "active" && status !== "upcoming") return false;
+  if (status !== "active" && status !== "upcoming") return "false";
   const seen = badge.first_seen ? Date.parse(badge.first_seen) : NaN;
-  if (Number.isNaN(seen)) return false;
-  return Date.now() - seen <= TEN_DAYS_MS;
+  if (Number.isNaN(seen)) return "false";
+  return (Date.now() - seen <= TEN_DAYS_MS) ? "true" : "false";
 }
 
 function sheetRow(badge) {
@@ -40,6 +40,7 @@ function sheetRow(badge) {
     endsAt: badge.end || "sin fecha",
     claimMethod: claimMethodEs(badge),
     category: badge.event_title || "",
+    // isNew siempre en inglés (true/false) — no traducir
     isNew: isNewBadge(badge),
     notes: badge.description || "",
     set_id: badge.set_id,
