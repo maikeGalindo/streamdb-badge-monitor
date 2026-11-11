@@ -1,22 +1,10 @@
 /** Sincroniza las insignias del monitor con un Google Apps Script Web App. */
 
-const STATUS_ES = {
-  active: "activa",
-  upcoming: "próxima",
-  ended: "inactiva",
-  inactive: "inactiva",
-  unknown: "próxima",
-};
-
 const TYPE_ES = {
   sub: "suscripción",
   watch: "tiempo visto",
   other: "otro",
 };
-
-function statusEs(status) {
-  return STATUS_ES[status] || status || "próxima";
-}
 
 function typeEs(badge) {
   if (badge.subscription) return TYPE_ES.sub;
@@ -35,7 +23,8 @@ function sheetRow(badge) {
     badge_name: badge.title || badge.set_id,
     badge_image: badge.image || "",
     slug: badge.set_id,
-    status: statusEs(badge.status),
+    // Status se mantiene en inglés porque el overlay depende de estos valores
+    status: badge.status === "ended" ? "inactive" : (badge.status || "upcoming"),
     type: typeEs(badge),
     startsAt: badge.start || "sin fecha",
     endsAt: badge.end || "sin fecha",
