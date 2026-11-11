@@ -33,14 +33,15 @@ function computeStatus(startStr, endStr) {
     const startTime = (startParts[1] || "00:00").slice(0, 5);
     const endDate = endParts[0];
     const endTime = (endParts[1] || "23:59").slice(0, 5);
-    if (!startDate) return "unknown";
+    // Sin fecha de inicio → se trata como upcoming (no unknown)
+    if (!startDate) return "upcoming";
     const start = Date.parse(`${startDate}T${startTime}:00Z`);
     const end = endDate ? Date.parse(`${endDate}T${endTime}:00Z`) : Infinity;
-    if (Number.isNaN(start)) return "unknown";
+    if (Number.isNaN(start)) return "upcoming";
     if (now < start) return "upcoming";
     if (now <= end) return "active";
     return "ended";
-  } catch { return "unknown"; }
+  } catch { return "upcoming"; }
 }
 
 function notifyReasonForNew(status) { return status === "active" ? "new_active" : "new_upcoming"; }
