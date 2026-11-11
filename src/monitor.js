@@ -141,12 +141,20 @@ async function main() {
   const events = await fetchEvents();
   const badges = extractBadges(events);
   console.log(`[monitor] Eventos: ${events.length} | Insignias: ${badges.length}`);
-  try { await syncBadgesToSheet(badges, { dryRun: DRY_RUN }); }
-  catch (error) { console.error(`[sheets] Error sincronizando: ${error.message}`); }
 
   const state = await loadState();
   const known = state.known || {};
   console.log(`[monitor] Known en estado: ${Object.keys(known).length}`);
+
+  // Adjuntar first_seen para calcular isNew en el Sheet
+  for (const badge of badges) {
+    const key = badgeKey(badge);
+    const previous = known[key];
+    badge.first_seen = previous?.first_seen || new Date().toISOString();
+  }
+
+  try { await syncBadgesToSheet(badges, { dryRun: DRY_RUN }); }
+  catch (error) { console.error(`[sheets] Error sincronizando: ${error.message}`); }
 
   if (SEED || Object.keys(known).length === 0) {
     const next = {};
@@ -157,7 +165,7 @@ async function main() {
         image: badge.image,
         status: badge.status,
         fingerprint: badgeFingerprint(badge),
-        first_seen: new Date().toISOString(),
+        first_seen: badge.first_seen || new Date().toISOString(),
       };
     }
     if (!DRY_RUN) {
@@ -210,7 +218,7 @@ async function main() {
       image: badge.image,
       status: badge.status,
       fingerprint: badgeFingerprint(badge),
-      first_seen: previous?.first_seen || new Date().toISOString(),
+      first_seen: previous?.first_seen || badge.first_seen || new Date().toISOString(),
     };
   }
 
