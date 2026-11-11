@@ -6,6 +6,8 @@ const TYPE_ES = {
   other: "otro",
 };
 
+const TEN_DAYS_MS = 10 * 24 * 60 * 60 * 1000;
+
 function typeEs(badge) {
   if (badge.subscription) return TYPE_ES.sub;
   if (badge.watch) return TYPE_ES.watch;
@@ -16,6 +18,14 @@ function claimMethodEs(badge) {
   if (badge.cost === "paid") return "Suscribirse o regalar sub en la categoría";
   if (badge.watch) return "Tiempo de visualización en la categoría";
   return "Ver detalles del evento";
+}
+
+function isNewBadge(badge) {
+  const status = badge.status === "ended" ? "inactive" : (badge.status || "upcoming");
+  if (status !== "active" && status !== "upcoming") return false;
+  const seen = badge.first_seen ? Date.parse(badge.first_seen) : NaN;
+  if (Number.isNaN(seen)) return false;
+  return Date.now() - seen <= TEN_DAYS_MS;
 }
 
 function sheetRow(badge) {
@@ -30,7 +40,7 @@ function sheetRow(badge) {
     endsAt: badge.end || "sin fecha",
     claimMethod: claimMethodEs(badge),
     category: badge.event_title || "",
-    isNew: false,
+    isNew: isNewBadge(badge),
     notes: badge.description || "",
     set_id: badge.set_id,
     version: badge.version,
