@@ -1,19 +1,45 @@
 /** Sincroniza las insignias del monitor con un Google Apps Script Web App. */
 
+const STATUS_ES = {
+  active: "activa",
+  upcoming: "próxima",
+  ended: "inactiva",
+  inactive: "inactiva",
+  unknown: "próxima",
+};
+
+const TYPE_ES = {
+  sub: "suscripción",
+  watch: "tiempo visto",
+  other: "otro",
+};
+
+function statusEs(status) {
+  return STATUS_ES[status] || status || "próxima";
+}
+
+function typeEs(badge) {
+  if (badge.subscription) return TYPE_ES.sub;
+  if (badge.watch) return TYPE_ES.watch;
+  return TYPE_ES.other;
+}
+
+function claimMethodEs(badge) {
+  if (badge.cost === "paid") return "Suscribirse o regalar sub en la categoría";
+  if (badge.watch) return "Tiempo de visualización en la categoría";
+  return "Ver detalles del evento";
+}
+
 function sheetRow(badge) {
   return {
     badge_name: badge.title || badge.set_id,
     badge_image: badge.image || "",
     slug: badge.set_id,
-    status: badge.status === "ended" ? "inactive" : badge.status,
-    type: badge.subscription ? "sub" : badge.watch ? "watch" : "other",
-    startsAt: badge.start || "unknown",
-    endsAt: badge.end || "unknown",
-    claimMethod: badge.cost === "paid"
-      ? "Sub or gift in category"
-      : badge.watch
-        ? "Watch time in category"
-        : "See event details",
+    status: statusEs(badge.status),
+    type: typeEs(badge),
+    startsAt: badge.start || "sin fecha",
+    endsAt: badge.end || "sin fecha",
+    claimMethod: claimMethodEs(badge),
     category: badge.event_title || "",
     isNew: false,
     notes: badge.description || "",
