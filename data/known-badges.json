@@ -241,11 +241,11 @@
     },
     "kda-fan:1": {
       "title": "K/DA Fan",
-      "event_title": "LoL Virtual Groups",
+      "event_title": "K/DA Fan",
       "image": "https://static-cdn.jtvnw.net/badges/v1/cf6ff3ab-9153-483b-bdac-f07577e6e202/3",
       "status": "upcoming",
       "first_seen": "2026-10-30T15:51:49.902Z",
-      "fingerprint": "{\"title\":\"K/DA Fan\",\"description\":\"This Chat Badge was earned by supporting the 2026 League of Legends World Championship!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/cf6ff3ab-9153-483b-bdac-f07577e6e202/3\",\"event_title\":\"LoL Virtual Groups\",\"event_id\":\"6aceb7be9d7941cd2d6e4c4d\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
+      "fingerprint": "{\"title\":\"K/DA Fan\",\"description\":\"This Chat Badge was earned by supporting the 2026 League of Legends World Championship!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/cf6ff3ab-9153-483b-bdac-f07577e6e202/3\",\"event_title\":\"K/DA Fan\",\"event_id\":\"6aceb7be9d7941cd2d6e4c4d\",\"start\":\"2026-11-13 16:00\",\"end\":\"2026-11-15 15:59\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "pentakill-fan:1": {
       "title": "Pentakill Fan",
@@ -354,7 +354,15 @@
       "status": "upcoming",
       "fingerprint": "{\"title\":\"Jordan x Space Jam\",\"description\":\"This badge was earned by watching Jordan x Space Jam streams during TwitchCon San Diego 2026!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/f7d0e088-2870-4b20-93e8-ab0fedfe50e4/3\",\"event_title\":\"Space Jam's 30th Anniversary \",\"event_id\":\"6af3702c57da6ebe60b67742\",\"start\":\"2026-11-13\",\"end\":\"2026-11-15\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
       "first_seen": "2026-11-10T19:52:15.888Z"
+    },
+    "streamer-awards-2026-vote:1": {
+      "title": "Streamer Awards 2026 Vote",
+      "event_title": "Streamer Awards",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/941f3939-ae1c-4b47-a5fd-9adc53d3a4f4/3",
+      "status": "active",
+      "fingerprint": "{\"title\":\"Streamer Awards 2026 Vote\",\"description\":\"This badge was earned by watching and voting on the 2026 Streamer Awards!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/941f3939-ae1c-4b47-a5fd-9adc53d3a4f4/3\",\"event_title\":\"Streamer Awards\",\"event_id\":\"6af5f2e1434a5c0090aef1eb\",\"start\":\"2026-11-12 17:00\",\"end\":\"2026-11-13 07:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
+      "first_seen": "2026-11-12T18:21:09.249Z"
     }
   },
-  "updatedAt": "2026-11-12T15:51:41.190Z"
+  "updatedAt": "2026-11-12T18:21:15.966Z"
 }
