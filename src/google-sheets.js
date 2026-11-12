@@ -1,17 +1,11 @@
 /** Sincroniza las insignias del monitor con un Google Apps Script Web App. */
 
-const TYPE_ES = {
-  sub: "suscripción",
-  watch: "tiempo visto",
-  other: "otro",
-};
-
 const TEN_DAYS_MS = 10 * 24 * 60 * 60 * 1000;
 
-function typeEs(badge) {
-  if (badge.subscription) return TYPE_ES.sub;
-  if (badge.watch) return TYPE_ES.watch;
-  return TYPE_ES.other;
+function typeKey(badge) {
+  if (badge.subscription) return "sub";
+  if (badge.watch) return "watch";
+  return "ticket";
 }
 
 function claimMethodEs(badge) {
@@ -35,7 +29,8 @@ function sheetRow(badge) {
     slug: badge.set_id,
     // Status se mantiene en inglés porque el overlay depende de estos valores
     status: badge.status === "ended" ? "inactive" : (badge.status || "upcoming"),
-    type: typeEs(badge),
+    // type en inglés: sub / watch / ticket
+    type: typeKey(badge),
     startsAt: badge.start || "sin fecha",
     endsAt: badge.end || "sin fecha",
     claimMethod: claimMethodEs(badge),
