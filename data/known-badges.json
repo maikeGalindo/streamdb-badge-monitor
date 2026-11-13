@@ -243,9 +243,9 @@
       "title": "K/DA Fan",
       "event_title": "K/DA Fan",
       "image": "https://static-cdn.jtvnw.net/badges/v1/cf6ff3ab-9153-483b-bdac-f07577e6e202/3",
-      "status": "upcoming",
+      "status": "active",
       "first_seen": "2026-10-30T15:51:49.902Z",
-      "fingerprint": "{\"title\":\"K/DA Fan\",\"description\":\"This Chat Badge was earned by supporting the 2026 League of Legends World Championship!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/cf6ff3ab-9153-483b-bdac-f07577e6e202/3\",\"event_title\":\"K/DA Fan\",\"event_id\":\"6aceb7be9d7941cd2d6e4c4d\",\"start\":\"2026-11-13 16:00\",\"end\":\"2026-11-15 15:59\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
+      "fingerprint": "{\"title\":\"K/DA Fan\",\"description\":\"This Chat Badge was earned by supporting the 2026 League of Legends World Championship!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/cf6ff3ab-9153-483b-bdac-f07577e6e202/3\",\"event_title\":\"K/DA Fan\",\"event_id\":\"6aceb7be9d7941cd2d6e4c4d\",\"start\":\"2026-11-13 16:00\",\"end\":\"2026-11-15 15:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "pentakill-fan:1": {
       "title": "Pentakill Fan",
@@ -335,7 +335,7 @@
       "first_seen": "2026-11-06T20:46:24.620Z",
       "last_notified": "2026-11-06T20:46:24.620Z",
       "last_reason": "new_upcoming",
-      "fingerprint": "{\"title\":\"Gallica\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer in the Metaphor: ReFantazio category during the Switch 2 launch!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/d2adf631-2045-4246-9c34-201487e809ae/3\",\"event_title\":\"Metaphor: ReFantazio\",\"event_id\":\"6aee2b1c377da3174bb814ee\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
+      "fingerprint": "{\"title\":\"Gallica\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer in the Metaphor: ReFantazio category during the Switch 2 launch!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/d2adf631-2045-4246-9c34-201487e809ae/3\",\"event_title\":\"Metaphor: ReFantazio\",\"event_id\":\"6aee2b1c377da3174bb814ee\",\"start\":\"2026-11-14 18:00\",\"end\":\"2026-12-12 17:59\",\"status\":\"upcoming\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     },
     "doom-the-dark-ages:1": {
       "title": "DOOM: The Dark Ages",
@@ -370,7 +370,87 @@
       "status": "active",
       "fingerprint": "{\"title\":\"Minecraft Golden Frog\",\"description\":\"The Minecraft Golden Frog badge was earned by watching 15 minutes of The Streamer Awards 2026!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/8d2de51b-76ac-4680-89c8-89e710663b09/3\",\"event_title\":\"Minecraft Golden Frog\",\"event_id\":\"6af68080b0cf55979e3fe353\",\"start\":\"2026-11-13 03:00\",\"end\":\"2026-11-13 05:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
       "first_seen": "2026-11-13T03:51:39.998Z"
+    },
+    "welcome-2-miami:1": {
+      "title": "Welcome 2 Miami",
+      "event_title": "Grand Theft Auto VI",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/1c51d343-754e-4fee-a717-ec95cafb5482/3",
+      "status": "upcoming",
+      "fingerprint": "{\"title\":\"Welcome 2 Miami\",\"description\":\"This badge was earned by subbing to a GTAVI streamer during launch.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/1c51d343-754e-4fee-a717-ec95cafb5482/3\",\"event_title\":\"Grand Theft Auto VI\",\"event_id\":\"6af3b63b9f075ba7b1237f2c\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}",
+      "first_seen": "2026-11-13T18:15:56.312Z"
+    },
+    "scored-big:1": {
+      "title": "Scored Big",
+      "event_title": "Grand Theft Auto VI",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/2acfc5b8-7907-4b05-9b30-e211a93ffc63/3",
+      "status": "upcoming",
+      "fingerprint": "{\"title\":\"Scored Big\",\"description\":\"This badge was earned by subbing to a GTAVI streamer during launch.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/2acfc5b8-7907-4b05-9b30-e211a93ffc63/3\",\"event_title\":\"Grand Theft Auto VI\",\"event_id\":\"6af3b63b9f075ba7b1237f2c\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}",
+      "first_seen": "2026-11-13T18:15:56.312Z"
+    },
+    "bleed-miami:1": {
+      "title": "Bleed Miami",
+      "event_title": "Grand Theft Auto VI",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/c7b8fc7d-7ebd-46e1-8f57-cc58ce51a9d1/3",
+      "status": "upcoming",
+      "fingerprint": "{\"title\":\"Bleed Miami\",\"description\":\"This badge was earned by subbing to a GTAVI streamer during launch.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/c7b8fc7d-7ebd-46e1-8f57-cc58ce51a9d1/3\",\"event_title\":\"Grand Theft Auto VI\",\"event_id\":\"6af3b63b9f075ba7b1237f2c\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}",
+      "first_seen": "2026-11-13T18:15:56.312Z"
+    },
+    "silver-chain:1": {
+      "title": "Silver Chain",
+      "event_title": "Grand Theft Auto VI",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/b8b5b601-d707-41c9-9fb6-9610280285e6/3",
+      "status": "upcoming",
+      "fingerprint": "{\"title\":\"Silver Chain\",\"description\":\"This badge was earned for watching 3 days of GTAVI during launch week.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/b8b5b601-d707-41c9-9fb6-9610280285e6/3\",\"event_title\":\"Grand Theft Auto VI\",\"event_id\":\"6af3b63b9f075ba7b1237f2c\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
+      "first_seen": "2026-11-13T18:15:56.312Z"
+    },
+    "purple-chain:1": {
+      "title": "Purple Chain",
+      "event_title": "Grand Theft Auto VI",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/07fdf1d1-f160-4415-821e-391a90852db6/3",
+      "status": "upcoming",
+      "fingerprint": "{\"title\":\"Purple Chain\",\"description\":\"This badge was earned for watching 1 day of GTAVI during launch week.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/07fdf1d1-f160-4415-821e-391a90852db6/3\",\"event_title\":\"Grand Theft Auto VI\",\"event_id\":\"6af3b63b9f075ba7b1237f2c\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
+      "first_seen": "2026-11-13T18:15:56.312Z"
+    },
+    "miami-chain:1": {
+      "title": "Miami Chain",
+      "event_title": "Grand Theft Auto VI",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/015f3db0-1a3f-4e4a-970d-bea3adb3a331/3",
+      "status": "upcoming",
+      "fingerprint": "{\"title\":\"Miami Chain\",\"description\":\"This badge was earned for watching 6 days of GTAVI during launch week.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/015f3db0-1a3f-4e4a-970d-bea3adb3a331/3\",\"event_title\":\"Grand Theft Auto VI\",\"event_id\":\"6af3b63b9f075ba7b1237f2c\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
+      "first_seen": "2026-11-13T18:15:56.312Z"
+    },
+    "gold-chain:1": {
+      "title": "Gold Chain",
+      "event_title": "Grand Theft Auto VI",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/b7974da7-9af4-4ff6-8029-a9ca95b8b037/3",
+      "status": "upcoming",
+      "fingerprint": "{\"title\":\"Gold Chain\",\"description\":\"This badge was earned for watching 4 days of GTAVI during launch week.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/b7974da7-9af4-4ff6-8029-a9ca95b8b037/3\",\"event_title\":\"Grand Theft Auto VI\",\"event_id\":\"6af3b63b9f075ba7b1237f2c\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
+      "first_seen": "2026-11-13T18:15:56.312Z"
+    },
+    "diamond-chain:1": {
+      "title": "Diamond Chain",
+      "event_title": "Grand Theft Auto VI",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/7498db8a-8085-4262-ac9c-b2d13591b75f/3",
+      "status": "upcoming",
+      "fingerprint": "{\"title\":\"Diamond Chain\",\"description\":\"This badge was earned for watching 5 days of GTAVI during launch week.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/7498db8a-8085-4262-ac9c-b2d13591b75f/3\",\"event_title\":\"Grand Theft Auto VI\",\"event_id\":\"6af3b63b9f075ba7b1237f2c\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
+      "first_seen": "2026-11-13T18:15:56.312Z"
+    },
+    "bronze-chain:1": {
+      "title": "Bronze Chain",
+      "event_title": "Grand Theft Auto VI",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/2e7cf17d-12ba-41cd-8f9d-4d96c5f69d45/3",
+      "status": "upcoming",
+      "fingerprint": "{\"title\":\"Bronze Chain\",\"description\":\"This badge was earned for watching 2 days of GTAVI during launch week.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/2e7cf17d-12ba-41cd-8f9d-4d96c5f69d45/3\",\"event_title\":\"Grand Theft Auto VI\",\"event_id\":\"6af3b63b9f075ba7b1237f2c\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
+      "first_seen": "2026-11-13T18:15:56.312Z"
+    },
+    "golden-iguana:1": {
+      "title": "Golden Iguana",
+      "event_title": "Grand Theft Auto VI",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/62c3816a-87d6-4ca0-bce0-fca6bcfa719f/3",
+      "status": "upcoming",
+      "fingerprint": "{\"title\":\"Golden Iguana\",\"description\":\"This badge was earned by securing all the Emotes and Badges from the GTAVI launch. \",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/62c3816a-87d6-4ca0-bce0-fca6bcfa719f/3\",\"event_title\":\"Grand Theft Auto VI\",\"event_id\":\"6af3b63b9f075ba7b1237f2c\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":null,\"scope\":\"global\",\"watch\":false,\"subscription\":false}",
+      "first_seen": "2026-11-13T18:15:56.312Z"
     }
   },
-  "updatedAt": "2026-11-13T14:15:47.098Z"
+  "updatedAt": "2026-11-13T18:16:21.959Z"
 }
