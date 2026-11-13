@@ -362,7 +362,15 @@
       "status": "active",
       "fingerprint": "{\"title\":\"Streamer Awards 2026 Vote\",\"description\":\"This badge was earned by watching and voting on the 2026 Streamer Awards!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/941f3939-ae1c-4b47-a5fd-9adc53d3a4f4/3\",\"event_title\":\"Streamer Awards\",\"event_id\":\"6af5f2e1434a5c0090aef1eb\",\"start\":\"2026-11-12 17:00\",\"end\":\"2026-11-13 07:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
       "first_seen": "2026-11-12T18:21:09.249Z"
+    },
+    "minecraft-golden-frog:1": {
+      "title": "Minecraft Golden Frog",
+      "event_title": "Minecraft Golden Frog",
+      "image": "https://static-cdn.jtvnw.net/badges/v1/8d2de51b-76ac-4680-89c8-89e710663b09/3",
+      "status": "active",
+      "fingerprint": "{\"title\":\"Minecraft Golden Frog\",\"description\":\"The Minecraft Golden Frog badge was earned by watching 15 minutes of The Streamer Awards 2026!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/8d2de51b-76ac-4680-89c8-89e710663b09/3\",\"event_title\":\"Minecraft Golden Frog\",\"event_id\":\"6af68080b0cf55979e3fe353\",\"start\":\"2026-11-13 03:00\",\"end\":\"2026-11-13 05:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
+      "first_seen": "2026-11-13T03:51:39.998Z"
     }
   },
-  "updatedAt": "2026-11-13T03:29:04.652Z"
+  "updatedAt": "2026-11-13T03:51:44.515Z"
 }
