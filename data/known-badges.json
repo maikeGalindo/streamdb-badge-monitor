@@ -448,9 +448,9 @@
       "event_title": "Grand Theft Auto VI",
       "image": "https://static-cdn.jtvnw.net/badges/v1/62c3816a-87d6-4ca0-bce0-fca6bcfa719f/3",
       "status": "upcoming",
-      "fingerprint": "{\"title\":\"Golden Iguana\",\"description\":\"This badge was earned by securing all the Emotes and Badges from the GTAVI launch. \",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/62c3816a-87d6-4ca0-bce0-fca6bcfa719f/3\",\"event_title\":\"Grand Theft Auto VI\",\"event_id\":\"6af3b63b9f075ba7b1237f2c\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":null,\"scope\":\"global\",\"watch\":false,\"subscription\":false}",
+      "fingerprint": "{\"title\":\"Golden Iguana\",\"description\":\"This badge was earned by securing all the Emotes and Badges from the GTAVI launch. \",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/62c3816a-87d6-4ca0-bce0-fca6bcfa719f/3\",\"event_title\":\"Grand Theft Auto VI\",\"event_id\":\"6af3b63b9f075ba7b1237f2c\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":false}",
       "first_seen": "2026-11-13T18:15:56.312Z"
     }
   },
-  "updatedAt": "2026-11-13T18:16:21.959Z"
+  "updatedAt": "2026-11-13T20:36:53.122Z"
 }
