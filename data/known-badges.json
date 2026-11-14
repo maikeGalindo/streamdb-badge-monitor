@@ -331,11 +331,11 @@
       "title": "Gallica",
       "event_title": "Metaphor: ReFantazio",
       "image": "https://static-cdn.jtvnw.net/badges/v1/d2adf631-2045-4246-9c34-201487e809ae/3",
-      "status": "upcoming",
+      "status": "active",
       "first_seen": "2026-11-06T20:46:24.620Z",
       "last_notified": "2026-11-06T20:46:24.620Z",
       "last_reason": "new_upcoming",
-      "fingerprint": "{\"title\":\"Gallica\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer in the Metaphor: ReFantazio category during the Switch 2 launch!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/d2adf631-2045-4246-9c34-201487e809ae/3\",\"event_title\":\"Metaphor: ReFantazio\",\"event_id\":\"6aee2b1c377da3174bb814ee\",\"start\":\"2026-11-14 18:00\",\"end\":\"2026-12-12 17:59\",\"status\":\"upcoming\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
+      "fingerprint": "{\"title\":\"Gallica\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer in the Metaphor: ReFantazio category during the Switch 2 launch!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/d2adf631-2045-4246-9c34-201487e809ae/3\",\"event_title\":\"Metaphor: ReFantazio\",\"event_id\":\"6aee2b1c377da3174bb814ee\",\"start\":\"2026-11-14 18:00\",\"end\":\"2026-12-12 17:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     },
     "doom-the-dark-ages:1": {
       "title": "DOOM: The Dark Ages",
@@ -452,5 +452,5 @@
       "first_seen": "2026-11-13T18:15:56.312Z"
     }
   },
-  "updatedAt": "2026-11-14T14:52:46.257Z"
+  "updatedAt": "2026-11-14T19:48:54.471Z"
 }
