@@ -12,25 +12,31 @@ export async function postDiscord(badge, text, reason = "new_active") {
     return { ok: false, skipped: true };
   }
 
+  const isUpcoming = badge.status === "upcoming" || reason === "new_upcoming";
+
   const colors = {
     new_active: 0x00c853,
     new_upcoming: 0xffab00,
     became_active: 0x00e676,
+    updated: isUpcoming ? 0xffab00 : 0x00c853,
   };
 
   const titles = {
     new_active: `🆕 ${badge.title} · YA ACTIVA`,
     new_upcoming: `📅 ${badge.title} · PRÓXIMA`,
     became_active: `🟢 ${badge.title} · AHORA ACTIVA`,
+    updated: isUpcoming
+      ? `🔄 ${badge.title} · PRÓXIMA (actualizada)`
+      : `🔄 ${badge.title} · ACTIVA (actualizada)`,
   };
 
-  const timeLabel = reason === "new_upcoming" ? "Empieza" : "Hasta";
-  const timeValue = toCdmx(reason === "new_upcoming" ? badge.start : badge.end);
+  const timeLabel = isUpcoming ? "Empieza" : "Hasta";
+  const timeValue = toCdmx(isUpcoming ? badge.start : badge.end);
 
   const embed = {
-    title: titles[reason] || titles.new_active,
+    title: titles[reason] || titles.new_upcoming,
     description: text,
-    color: colors[reason] || colors.new_active,
+    color: colors[reason] || colors.new_upcoming,
     timestamp: new Date().toISOString(),
     footer: { text: "AlertaDropsMX · Hora CDMX" },
   };
