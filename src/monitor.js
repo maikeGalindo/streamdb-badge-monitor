@@ -185,7 +185,14 @@ async function main() {
       toNotify.push({ badge, reason: notifyReasonForNew(badge.status) });
     } else if (previous && (previous.status === "upcoming" || previous.status === "unknown") && badge.status === "active") {
       toNotify.push({ badge, reason: "became_active" });
-    } else if (previous?.fingerprint && previous.fingerprint !== fingerprint && badge.status !== "ended") {
+    } else if (
+      previous?.fingerprint &&
+      previous.fingerprint !== fingerprint &&
+      badge.status === "active" &&
+      previous.status !== "active"
+    ) {
+      // Solo avisar "updated" si realmente pasó a activa.
+      // Cambios menores (fechas) mientras sigue upcoming no generan aviso.
       toNotify.push({ badge, reason: "updated" });
     }
   }
