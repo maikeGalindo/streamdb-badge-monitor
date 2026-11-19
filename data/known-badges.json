@@ -349,10 +349,10 @@
     },
     "jordan-x-space-jam:1": {
       "title": "Jordan x Space Jam",
-      "event_title": "Space Jam's 30th Anniversary ",
+      "event_title": "Jordan x Space Jam",
       "image": "https://static-cdn.jtvnw.net/badges/v1/f7d0e088-2870-4b20-93e8-ab0fedfe50e4/3",
       "status": "active",
-      "fingerprint": "{\"title\":\"Jordan x Space Jam\",\"description\":\"This badge was earned by watching Jordan x Space Jam streams during TwitchCon San Diego 2026!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/f7d0e088-2870-4b20-93e8-ab0fedfe50e4/3\",\"event_title\":\"Space Jam's 30th Anniversary \",\"event_id\":\"6af3702c57da6ebe60b67742\",\"start\":\"2026-11-15 22:00\",\"end\":\"2026-11-15 22:45\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
+      "fingerprint": "{\"title\":\"Jordan x Space Jam\",\"description\":\"This badge was earned by watching Jordan x Space Jam streams during TwitchCon San Diego 2026!\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/f7d0e088-2870-4b20-93e8-ab0fedfe50e4/3\",\"event_title\":\"Jordan x Space Jam\",\"event_id\":\"6aff52beb4d04810c47752ae\",\"start\":\"2026-11-19 20:00\",\"end\":\"2026-11-20 20:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
       "first_seen": "2026-11-10T19:52:15.888Z"
     },
     "streamer-awards-2026-vote:1": {
@@ -484,5 +484,5 @@
       "first_seen": "2026-11-18T13:50:27.042Z"
     }
   },
-  "updatedAt": "2026-11-19T18:04:15.128Z"
+  "updatedAt": "2026-11-19T20:24:31.652Z"
 }
