@@ -480,9 +480,9 @@
       "event_title": "RuneScape & Old School RuneScape",
       "image": "https://static-cdn.jtvnw.net/badges/v1/bf75cdff-7b3a-4ba6-a1d5-e00563b9877e/3",
       "status": "upcoming",
-      "fingerprint": "{\"title\":\"RuneScape Quest Icon\",\"description\":\"Watch 60 minutes of any channel streaming in the RuneScape category\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/bf75cdff-7b3a-4ba6-a1d5-e00563b9877e/3\",\"event_title\":\"RuneScape & Old School RuneScape\",\"event_id\":\"6afda4f8e4211bc262d5e524\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
+      "fingerprint": "{\"title\":\"RuneScape Quest Icon\",\"description\":\"Watch 60 minutes of any channel streaming in the RuneScape category.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/bf75cdff-7b3a-4ba6-a1d5-e00563b9877e/3\",\"event_title\":\"RuneScape & Old School RuneScape\",\"event_id\":\"6afda4f8e4211bc262d5e524\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
       "first_seen": "2026-11-18T13:50:27.042Z"
     }
   },
-  "updatedAt": "2026-11-20T16:49:04.663Z"
+  "updatedAt": "2026-11-20T23:00:07.879Z"
 }
