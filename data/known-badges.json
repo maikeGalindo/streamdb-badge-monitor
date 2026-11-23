@@ -456,7 +456,7 @@
       "event_title": "Old School RuneScape Hardcore Worlds",
       "image": "https://static-cdn.jtvnw.net/badges/v1/95507c79-f87e-4a0d-9940-92af830b3b36/3",
       "status": "active",
-      "fingerprint": "{\"title\":\"RuneScape Bones\",\"description\":\"Watch 60 minutes of any channel streaming in the Old School RuneScape category.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/95507c79-f87e-4a0d-9940-92af830b3b36/3\",\"event_title\":\"Old School RuneScape Hardcore Worlds\",\"event_id\":\"6afda005e4211bc262d4e088\",\"start\":\"2026-11-18 13:04\",\"end\":\"2026-12-01 23:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
+      "fingerprint": "{\"title\":\"RuneScape Bones\",\"description\":\"This badge was earned by watching 60 minutes of any channel streaming in the Old School RuneScape category.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/95507c79-f87e-4a0d-9940-92af830b3b36/3\",\"event_title\":\"Old School RuneScape Hardcore Worlds\",\"event_id\":\"6afda005e4211bc262d4e088\",\"start\":\"2026-11-18 13:04\",\"end\":\"2026-12-01 23:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
       "first_seen": "2026-11-18T13:50:27.042Z"
     },
     "runescape-gnome-plush:1": {
@@ -464,7 +464,7 @@
       "event_title": "Old School RuneScape Hardcore Worlds",
       "image": "https://static-cdn.jtvnw.net/badges/v1/8b5bf6d2-3f89-4c24-a6c2-c5eda04ce1e6/3",
       "status": "active",
-      "fingerprint": "{\"title\":\"RuneScape Gnome Plush\",\"description\":\"Subscribe or Gift 1 sub to any channel streaming in the Old School RuneScape category.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/8b5bf6d2-3f89-4c24-a6c2-c5eda04ce1e6/3\",\"event_title\":\"Old School RuneScape Hardcore Worlds\",\"event_id\":\"6afda005e4211bc262d4e088\",\"start\":\"2026-11-18 13:04\",\"end\":\"2026-12-01 23:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}",
+      "fingerprint": "{\"title\":\"RuneScape Gnome Plush\",\"description\":\"This badge was earned by subscribing or gifting a sub to any channel streaming in the Old School RuneScape category.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/8b5bf6d2-3f89-4c24-a6c2-c5eda04ce1e6/3\",\"event_title\":\"Old School RuneScape Hardcore Worlds\",\"event_id\":\"6afda005e4211bc262d4e088\",\"start\":\"2026-11-18 13:04\",\"end\":\"2026-12-01 23:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}",
       "first_seen": "2026-11-18T13:50:27.042Z"
     },
     "runescape-santa-hat:1": {
@@ -472,7 +472,7 @@
       "event_title": "RuneScape & Old School RuneScape",
       "image": "https://static-cdn.jtvnw.net/badges/v1/2bee9264-647c-4bdc-921f-cb5e651b1c64/3",
       "status": "upcoming",
-      "fingerprint": "{\"title\":\"RuneScape Santa Hat\",\"description\":\"Watch 60 minutes of any channel streaming in the Old School RuneScape category during December 2026.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/2bee9264-647c-4bdc-921f-cb5e651b1c64/3\",\"event_title\":\"RuneScape & Old School RuneScape\",\"event_id\":\"6afda4f8e4211bc262d5e524\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
+      "fingerprint": "{\"title\":\"RuneScape Santa Hat\",\"description\":\"This badge was earned by watching 60 minutes of any channel streaming in the Old School RuneScape category during December 2026.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/2bee9264-647c-4bdc-921f-cb5e651b1c64/3\",\"event_title\":\"RuneScape & Old School RuneScape\",\"event_id\":\"6afda4f8e4211bc262d5e524\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
       "first_seen": "2026-11-18T13:50:27.042Z"
     },
     "runescape-quest-icon:1": {
@@ -480,9 +480,9 @@
       "event_title": "RuneScape & Old School RuneScape",
       "image": "https://static-cdn.jtvnw.net/badges/v1/bf75cdff-7b3a-4ba6-a1d5-e00563b9877e/3",
       "status": "upcoming",
-      "fingerprint": "{\"title\":\"RuneScape Quest Icon\",\"description\":\"Watch 60 minutes of any channel streaming in the RuneScape category.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/bf75cdff-7b3a-4ba6-a1d5-e00563b9877e/3\",\"event_title\":\"RuneScape & Old School RuneScape\",\"event_id\":\"6afda4f8e4211bc262d5e524\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
+      "fingerprint": "{\"title\":\"RuneScape Quest Icon\",\"description\":\"This badge was earned by watching 60 minutes of any channel streaming in the RuneScape category.\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/bf75cdff-7b3a-4ba6-a1d5-e00563b9877e/3\",\"event_title\":\"RuneScape & Old School RuneScape\",\"event_id\":\"6afda4f8e4211bc262d5e524\",\"start\":\"\",\"end\":\"\",\"status\":\"upcoming\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}",
       "first_seen": "2026-11-18T13:50:27.042Z"
     }
   },
-  "updatedAt": "2026-11-23T09:50:06.066Z"
+  "updatedAt": "2026-11-23T21:56:41.516Z"
 }
