@@ -291,41 +291,41 @@
       "title": "Joy",
       "event_title": "PAYDAY 3",
       "image": "https://static-cdn.jtvnw.net/badges/v1/e8ff781d-a445-4ed3-9790-9514a2eb45f0/3",
-      "status": "active",
+      "status": "ended",
       "first_seen": "2026-11-03T17:08:26.957Z",
       "last_notified": "2026-11-06T12:13:15.860Z",
       "last_reason": "became_active",
-      "fingerprint": "{\"title\":\"Joy\",\"description\":\"This badge was earned by watching a streamer in the Payday 3 category for 90 minutes\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/e8ff781d-a445-4ed3-9790-9514a2eb45f0/3\",\"event_title\":\"PAYDAY 3\",\"event_id\":\"6ae9f05481dcdc9db596a160\",\"start\":\"2026-11-06 12:00\",\"end\":\"2026-11-27 11:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
+      "fingerprint": "{\"title\":\"Joy\",\"description\":\"This badge was earned by watching a streamer in the Payday 3 category for 90 minutes\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/e8ff781d-a445-4ed3-9790-9514a2eb45f0/3\",\"event_title\":\"PAYDAY 3\",\"event_id\":\"6ae9f05481dcdc9db596a160\",\"start\":\"2026-11-06 12:00\",\"end\":\"2026-11-27 11:59\",\"status\":\"ended\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "clover:1": {
       "title": "Clover",
       "event_title": "PAYDAY 3",
       "image": "https://static-cdn.jtvnw.net/badges/v1/1495822f-a2a6-46f7-8e0b-48db278621d9/3",
-      "status": "active",
+      "status": "ended",
       "first_seen": "2026-11-03T17:08:28.874Z",
       "last_notified": "2026-11-06T12:13:17.683Z",
       "last_reason": "became_active",
-      "fingerprint": "{\"title\":\"Clover\",\"description\":\"This badge was earned by watching a streamer in the Payday 3 category for 30 minutes\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/1495822f-a2a6-46f7-8e0b-48db278621d9/3\",\"event_title\":\"PAYDAY 3\",\"event_id\":\"6ae9f05481dcdc9db596a160\",\"start\":\"2026-11-06 12:00\",\"end\":\"2026-11-27 11:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
+      "fingerprint": "{\"title\":\"Clover\",\"description\":\"This badge was earned by watching a streamer in the Payday 3 category for 30 minutes\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/1495822f-a2a6-46f7-8e0b-48db278621d9/3\",\"event_title\":\"PAYDAY 3\",\"event_id\":\"6ae9f05481dcdc9db596a160\",\"start\":\"2026-11-06 12:00\",\"end\":\"2026-11-27 11:59\",\"status\":\"ended\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "kawaiidozer:1": {
       "title": "KawaiiDozer",
       "event_title": "PAYDAY 3",
       "image": "https://static-cdn.jtvnw.net/badges/v1/a1bf84a7-cebc-496b-acf2-411938b18d9f/3",
-      "status": "active",
+      "status": "ended",
       "first_seen": "2026-11-03T17:08:30.536Z",
       "last_notified": "2026-11-06T12:13:19.416Z",
       "last_reason": "became_active",
-      "fingerprint": "{\"title\":\"KawaiiDozer\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer in the Payday 3 category\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/a1bf84a7-cebc-496b-acf2-411938b18d9f/3\",\"event_title\":\"PAYDAY 3\",\"event_id\":\"6ae9f05481dcdc9db596a160\",\"start\":\"2026-11-06 12:00\",\"end\":\"2026-11-27 11:59\",\"status\":\"active\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
+      "fingerprint": "{\"title\":\"KawaiiDozer\",\"description\":\"This badge was earned by subscribing or gifting a sub to a streamer in the Payday 3 category\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/a1bf84a7-cebc-496b-acf2-411938b18d9f/3\",\"event_title\":\"PAYDAY 3\",\"event_id\":\"6ae9f05481dcdc9db596a160\",\"start\":\"2026-11-06 12:00\",\"end\":\"2026-11-27 11:59\",\"status\":\"ended\",\"cost\":\"paid\",\"scope\":\"global\",\"watch\":false,\"subscription\":true}"
     },
     "pearl:1": {
       "title": "Pearl",
       "event_title": "PAYDAY 3",
       "image": "https://static-cdn.jtvnw.net/badges/v1/8346da26-6494-4edb-945d-63a50a6e416b/3",
-      "status": "active",
+      "status": "ended",
       "first_seen": "2026-11-03T17:08:32.201Z",
       "last_notified": "2026-11-06T12:13:21.164Z",
       "last_reason": "became_active",
-      "fingerprint": "{\"title\":\"Pearl\",\"description\":\"This badge was earned by watching a streamer in the Payday 3 category for 60 minutes\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/8346da26-6494-4edb-945d-63a50a6e416b/3\",\"event_title\":\"PAYDAY 3\",\"event_id\":\"6ae9f05481dcdc9db596a160\",\"start\":\"2026-11-06 12:00\",\"end\":\"2026-11-27 11:59\",\"status\":\"active\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
+      "fingerprint": "{\"title\":\"Pearl\",\"description\":\"This badge was earned by watching a streamer in the Payday 3 category for 60 minutes\",\"image\":\"https://static-cdn.jtvnw.net/badges/v1/8346da26-6494-4edb-945d-63a50a6e416b/3\",\"event_title\":\"PAYDAY 3\",\"event_id\":\"6ae9f05481dcdc9db596a160\",\"start\":\"2026-11-06 12:00\",\"end\":\"2026-11-27 11:59\",\"status\":\"ended\",\"cost\":\"free\",\"scope\":\"global\",\"watch\":true,\"subscription\":false}"
     },
     "gallica:1": {
       "title": "Gallica",
@@ -484,5 +484,5 @@
       "first_seen": "2026-11-18T13:50:27.042Z"
     }
   },
-  "updatedAt": "2026-11-27T03:48:36.501Z"
+  "updatedAt": "2026-11-27T13:36:46.959Z"
 }
